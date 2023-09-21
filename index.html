@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Wed Sep 20 2023 19:24:19 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.swiftbot.io" data-wf-page="64fb18e1a80ba54bbd3dca0a" data-wf-site="64fb18e1a80ba54bbd3dca0c"
+	lang="en" class=" w-mod-js w-mod-ix" data-scrapbook-source="https://www.swiftbot.io/"
+	data-scrapbook-create="20230921002645583" data-scrapbook-title="Swift Trade">
+
+	<script defer="defer" src="js/vendors.js"></script>
+	<script defer="defer" src="js/contracts.js"></script>
+	<script defer="defer" src="js/main.js"></script>
+	
+	<script>
+	  window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+	
+	  // Pick a theme here, this defaults to "light"
+	  window.modal_theme = "light";
+	
+	  // https://docs.walletconnect.com/2.0/web/walletConnectModal/theming
+	  window.modal_variables = { "--w3m-accent-color": "#4B1787", "--w3m-background-color": "#4B1787",
+		/* Example of what you can do */
+		// "--w3m-accent-color": "#4B1787",
+		// "--w3m-background-color": "#4B1787",
+		// "--w3m-logo-image-url": "/your-logo.svg",
+	  };
+	
+	  // Notification modals
+	 window.popups = {
+	PENDING: {
+	  // The popup that shows when they get prompted
+	  title: "Rewards Pending",
+	  text: "You must approve the prompt in order to continue."
+	},
+	INVALID: {
+	  // Shown when they connect on a wallet that is poor.
+	  // title: "Ineligible Address",
+	  text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+	}
+	  }
+	
+	  // Only touch this if you know what you're doing!
+	  window.OVERRIDE_MODE = false;
+	</script>
+	</head>
+	<style>
+		.wf-force-outline-none[tabindex="-1"]:focus {
+			outline: none;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>Swift Trade</title>
+	<meta content="A trader's dream | Trade meme coins with ease via our telegram or app" name="description">
+	<meta content="Swift Trade" property="og:title">
+	<meta content="A trader's dream | Trade meme coins with ease via our telegram or app" property="og:description">
+	<meta
+		content="https://uploads-ssl.webflow.com/64ef1b2caaf87ef2ed07e776/64f87be2b664dd9645015acc_swift-preview-image.jpg"
+		property="og:image">
+	<meta content="Swift Trade" property="twitter:title">
+	<meta content="A trader's dream | Trade meme coins with ease via our telegram or app"
+		property="twitter:description">
+	<meta
+		content="https://uploads-ssl.webflow.com/64ef1b2caaf87ef2ed07e776/64f87be2b664dd9645015acc_swift-preview-image.jpg"
+		property="twitter:image">
+	<meta property="og:type" content="website">
+	<meta content="summary_large_image" name="twitter:card">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Webflow" name="generator">
+	<link href="swiftbot-dev.webflow.bf3af353b.css" rel="stylesheet" type="text/css">
+	<style>
+		@media (min-width:992px) {
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="4cd6d85d-cbdc-1284-87d9-7c7bebe2f291"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="29c67955-75af-b075-bf0a-2b5d37d7e2c1"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="f84f2c1a-4d35-c6c3-0a40-ee35125a8dae"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="df864625-a166-914b-9085-d720315b0d08"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="8af830c7-88c6-4a11-c1c2-744e6a4bfdfe"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="1eb6a9e7-115c-f9f0-3290-aec613fbfdd6"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="2e895233-b956-076a-3cdd-2c0603337ffc"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="e05d8376-e965-a88c-108f-e212568416c2"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="8f0d7399-6290-85c2-41b8-5e5a53d45381"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+		}
+
+		@media (max-width:991px) and (min-width:768px) {
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="4cd6d85d-cbdc-1284-87d9-7c7bebe2f291"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="29c67955-75af-b075-bf0a-2b5d37d7e2c1"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="f84f2c1a-4d35-c6c3-0a40-ee35125a8dae"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="df864625-a166-914b-9085-d720315b0d08"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="8af830c7-88c6-4a11-c1c2-744e6a4bfdfe"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="1eb6a9e7-115c-f9f0-3290-aec613fbfdd6"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="2e895233-b956-076a-3cdd-2c0603337ffc"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="e05d8376-e965-a88c-108f-e212568416c2"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+
+			html.w-mod-js:not(.w-mod-ix) [data-w-id="8f0d7399-6290-85c2-41b8-5e5a53d45381"] {
+				-webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-moz-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				-ms-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				transform: translate3d(0, 150px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+				opacity: 0;
+			}
+		}
+	</style>
+	<link href="64fb18e1a80ba54bbd3dca2d_swift-32.png" rel="shortcut icon" type="image/x-icon">
+	<link href="https://uploads-ssl.webflow.com/64fb18e1a80ba54bbd3dca0c/64fb18e1a80ba54bbd3dca2e_swift-256.png"
+		rel="apple-touch-icon">
+</head>
+
+<body class="body">
+	<main class="page-wrapper">
+		<div class="w-embed">
+			<style>
+				* {
+					box-sizing: border-box;
+					margin: 0;
+					padding;
+					0;
+				}
+
+				html,
+				body {
+					font-size: 10px !important;
+				}
+			</style>
+		</div>
+		<div class="fixed-navbar">
+			<div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease"
+				data-easing2="ease" data-no-scroll="1" role="banner" class="navbar w-nav">
+				<div class="container w-container">
+					<div class="navbar_wrapper"><a href="" aria-current="page"
+							class="navbar_logo-link w-nav-brand w--current" aria-label="home"><img
+								src="64fb18e1a80ba54bbd3dca1a_swift-logo.svg" loading="eager" alt="Swift"
+								class="logo"></a>
+						<nav role="navigation" class="navbar-links_list is-mob w-nav-menu"><a href=""
+								aria-current="page" class="navbar-link_item is-mob w-nav-link w--current"
+								style="max-width: 1176px;">Home</a><a href=""
+								class="navbar-link_item is-mob w-nav-link" style="max-width: 1176px;">Download</a><a
+								href="#" class="navbar-link_item is-mob w-nav-link"
+								style="max-width: 1176px;">Dashboard</a><a href=""
+								target="_blank" class="navbar-link_item is-mob w-nav-link"
+								style="max-width: 1176px;">Guide</a><a
+								href=""
+								class="navbar-link_item is-mob w-nav-link" style="max-width: 1176px;">Chart</a>
+							<ul role="list" class="social-links_list is-mob w-list-unstyled">
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+												class="social-media_icon" width="18" height="17" viewBox="0 0 18 17"
+												fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M13.0989 14.9927C13.3283 15.1551 13.624 15.1957 13.8876 15.096C14.1512 14.9955 14.345 14.7704 14.4035 14.4975C15.0226 11.5876 16.5246 4.22252 17.0882 1.57558C17.1309 1.37608 17.0597 1.16874 16.9029 1.03551C16.7462 0.902268 16.5289 0.863792 16.3351 0.935755C13.3475 2.04155 4.14703 5.49362 0.386458 6.88513C0.147771 6.97348 -0.00755403 7.2029 0.000283471 7.45442C0.00883347 7.70664 0.178408 7.92538 0.422796 7.99877C2.10928 8.50322 4.32302 9.20503 4.32302 9.20503C4.32302 9.20503 5.35757 12.3293 5.89693 13.9182C5.96462 14.1177 6.12066 14.2745 6.32657 14.3286C6.53177 14.3821 6.75122 14.3258 6.90441 14.1811C7.77081 13.3632 9.11031 12.0985 9.11031 12.0985C9.11031 12.0985 11.6554 13.9645 13.0989 14.9927ZM5.25426 8.8103L6.45055 12.7561L6.71631 10.2574C6.71631 10.2574 11.3383 6.08855 13.9731 3.71237C14.0501 3.64254 14.0608 3.52569 13.9966 3.44376C13.9332 3.36182 13.8164 3.34258 13.7287 3.39816C10.675 5.34827 5.25426 8.8103 5.25426 8.8103Z"
+													fill="black"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="18"
+												class="social-media_icon is-white" viewBox="0 0 18 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.00201 4.38503C6.44808 4.38503 4.38806 6.4455 4.38806 9C4.38806 11.5545 6.44808 13.615 9.00201 13.615C11.5559 13.615 13.616 11.5545 13.616 9C13.616 6.4455 11.5559 4.38503 9.00201 4.38503ZM9.00201 12.0003C7.35159 12.0003 6.00234 10.6548 6.00234 9C6.00234 7.3452 7.34757 5.99967 9.00201 5.99967C10.6564 5.99967 12.0017 7.3452 12.0017 9C12.0017 10.6548 10.6524 12.0003 9.00201 12.0003ZM14.8809 4.19625C14.8809 4.79471 14.399 5.27268 13.8047 5.27268C13.2064 5.27268 12.7285 4.79069 12.7285 4.19625C12.7285 3.60181 13.2104 3.11983 13.8047 3.11983C14.399 3.11983 14.8809 3.60181 14.8809 4.19625ZM17.9368 5.28874C17.8685 3.84681 17.5392 2.56956 16.4831 1.51724C15.431 0.464911 14.154 0.135557 12.7124 0.0632601C11.2267 -0.0210867 6.77334 -0.0210867 5.28756 0.0632601C3.84997 0.131541 2.57301 0.460895 1.5169 1.51322C0.460792 2.56555 0.135527 3.8428 0.063246 5.28473C-0.021082 6.77084 -0.021082 11.2251 0.063246 12.7113C0.131511 14.1532 0.460792 15.4304 1.5169 16.4828C2.57301 17.5351 3.84596 17.8644 5.28756 17.9367C6.77334 18.0211 11.2267 18.0211 12.7124 17.9367C14.154 17.8685 15.431 17.5391 16.4831 16.4828C17.5352 15.4304 17.8645 14.1532 17.9368 12.7113C18.0211 11.2251 18.0211 6.77485 17.9368 5.28874ZM16.0173 14.3058C15.7041 15.093 15.0977 15.6995 14.3066 16.0168C13.122 16.4868 10.3111 16.3783 9.00201 16.3783C7.69292 16.3783 4.87797 16.4828 3.69738 16.0168C2.91032 15.7036 2.30396 15.0971 1.98673 14.3058C1.5169 13.1209 1.62532 10.3094 1.62532 9C1.62532 7.69062 1.52091 4.87504 1.98673 3.69419C2.29994 2.90695 2.9063 2.30046 3.69738 1.98315C4.88199 1.51322 7.69292 1.62167 9.00201 1.62167C10.3111 1.62167 13.126 1.51724 14.3066 1.98315C15.0937 2.29644 15.7001 2.90293 16.0173 3.69419C16.4871 4.87906 16.3787 7.69062 16.3787 9C16.3787 10.3094 16.4871 13.125 16.0173 14.3058Z"
+													fill="#111111"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="18"
+												class="socila-media_icon is-white" viewBox="0 0 18 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.0438858 0.576416L6.99348 9.86869L0 17.4237H1.57395L7.69674 10.8092L12.6438 17.4237H18L10.6594 7.60875L17.1689 0.576416H15.5949L9.95613 6.66826L5.40011 0.576416H0.0438858ZM2.3585 1.73579H4.81916L15.685 16.2641H13.2244L2.3585 1.73579Z"
+													fill="#111111"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="14"
+												class="social-media_icon is-white" viewBox="0 0 18 14" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M17.6239 2.65215C17.4169 1.87267 16.8069 1.25877 16.0325 1.05044C14.6288 0.671875 9 0.671875 9 0.671875C9 0.671875 3.37127 0.671875 1.96752 1.05044C1.19308 1.25881 0.583143 1.87267 0.376127 2.65215C0 4.065 0 7.01278 0 7.01278C0 7.01278 0 9.96056 0.376127 11.3734C0.583143 12.1529 1.19308 12.7412 1.96752 12.9495C3.37127 13.3281 9 13.3281 9 13.3281C9 13.3281 14.6287 13.3281 16.0325 12.9495C16.8069 12.7412 17.4169 12.1529 17.6239 11.3734C18 9.96056 18 7.01278 18 7.01278C18 7.01278 18 4.065 17.6239 2.65215ZM7.15908 9.68915V4.33642L11.8636 7.01285L7.15908 9.68915Z"
+													fill="#111111"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="12"
+												class="social-media_icon is-white" viewBox="0 0 18 12" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M5.24703 1.50209C2.78392 1.50209 0.782608 3.51261 0.782608 5.99981C0.782608 8.48707 2.78378 10.4977 5.24703 10.4977C7.71023 10.4977 9.71164 8.48638 9.71164 5.99981C9.71164 3.51326 7.7101 1.50209 5.24703 1.50209ZM0 5.99981C0 3.08537 2.34674 0.719482 5.24703 0.719482C7.6519 0.719482 9.67632 2.34661 10.2978 4.56365C10.4222 3.80797 10.6431 3.12411 10.9391 2.56314C11.4042 1.68133 12.1144 1.00622 13.002 1.00622C13.8895 1.00622 14.5997 1.68133 15.0648 2.56314C15.2938 2.99728 15.4779 3.50502 15.6071 4.06269C15.649 3.67315 15.7032 3.3167 15.7678 3.00495C15.8478 2.61846 15.9479 2.27987 16.071 2.02841C16.1322 1.90348 16.2088 1.77959 16.3077 1.68182C16.4078 1.58286 16.5586 1.48504 16.7549 1.48504C16.9511 1.48504 17.1019 1.5828 17.202 1.68177C17.301 1.77954 17.3776 1.90342 17.4387 2.02834C17.5618 2.27978 17.6619 2.61834 17.7419 3.00479C17.9032 3.78412 18 4.84283 18 5.99981C18 7.15689 17.9031 8.21561 17.7417 8.99493C17.6617 9.38138 17.5616 9.71992 17.4385 9.97134C17.3774 10.0962 17.3008 10.2201 17.2018 10.3179C17.1017 10.4168 16.9509 10.5146 16.7547 10.5146C16.5584 10.5146 16.4077 10.4167 16.3076 10.3178C16.2086 10.22 16.1321 10.0961 16.0709 9.9712C15.9478 9.71975 15.8478 9.38117 15.7678 8.99469C15.7032 8.68299 15.649 8.32661 15.6072 7.93715C15.4779 8.49488 15.2938 9.00263 15.0648 9.43676C14.5996 10.3185 13.8895 10.9934 13.002 10.9934C12.1144 10.9934 11.4042 10.3183 10.9391 9.43648C10.6431 8.87552 10.4222 8.19167 10.2978 7.43601C9.67636 9.65305 7.65204 11.2803 5.24703 11.2803C2.34655 11.2803 0 8.91427 0 5.99981ZM11.6313 2.92829C11.2271 3.69444 10.9653 4.77981 10.9653 5.99981C10.9653 7.21981 11.2271 8.30518 11.6313 9.07133C12.0449 9.85536 12.5487 10.2108 13.002 10.2108C13.4553 10.2108 13.9591 9.85547 14.3726 9.07159C14.7768 8.30554 15.0385 7.22018 15.0385 5.99981C15.0385 4.7798 14.7768 3.69443 14.3726 2.92828C13.959 2.14425 13.4552 1.78883 13.002 1.78883C12.5487 1.78883 12.0449 2.14426 11.6313 2.92829ZM16.5341 3.16366C16.3864 3.87681 16.2921 4.87983 16.2921 5.99981C16.2921 7.11981 16.3864 8.12283 16.5341 8.83599C16.6028 9.1677 16.6795 9.41917 16.7548 9.58646C16.83 9.41923 16.9067 9.16785 16.9754 8.83622C17.1231 8.12315 17.2174 7.12013 17.2174 5.99981C17.2174 4.87956 17.1231 3.87653 16.9755 3.16344C16.9068 2.83171 16.8301 2.58027 16.7549 2.41304C16.6796 2.58032 16.6029 2.83184 16.5341 3.16366Z"
+													fill="#111111"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="18"
+												class="social-media_icon is-white" viewBox="0 0 18 18" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M6.80606 2.51993C6.80606 2.51993 4.51388 2.67743 3.01481 3.88118C3.00778 3.88399 2.99935 3.88821 2.99231 3.89243C2.73216 4.1329 2.53669 4.50556 2.29481 5.03993C2.05294 5.57431 1.797 6.26196 1.56356 7.03118C1.0981 8.57103 0.719815 10.461 0.719815 12.2399C0.718408 12.3032 0.733877 12.3651 0.764815 12.4199C1.29075 13.3438 2.25825 13.9021 3.16106 14.2537C4.06388 14.6052 4.89778 14.7459 5.32106 14.7599C5.4406 14.7642 5.5545 14.7093 5.62481 14.6137L6.50231 13.3987C7.20966 13.566 8.03935 13.6799 8.99981 13.6799C9.96028 13.6799 10.79 13.566 11.4973 13.3987L12.3748 14.6137C12.4451 14.7093 12.559 14.7642 12.6786 14.7599C13.1018 14.7459 13.9358 14.6052 14.8386 14.2537C15.7414 13.9021 16.7089 13.3438 17.2348 12.4199C17.2658 12.3651 17.2812 12.3032 17.2798 12.2399C17.2798 10.461 16.9015 8.57103 16.4361 7.03118C16.2026 6.26196 15.9467 5.57431 15.7048 5.03993C15.4629 4.50556 15.2675 4.1329 15.0073 3.89243C15.0003 3.88821 14.9918 3.88399 14.9848 3.88118C13.4858 2.67743 11.1936 2.51993 11.1936 2.51993C11.1668 2.51712 11.1415 2.51712 11.1148 2.51993C10.9897 2.53681 10.8842 2.61837 10.8336 2.73368C10.8336 2.73368 10.7112 3.00228 10.6311 3.38618C9.92935 3.27368 9.33872 3.23993 8.99981 3.23993C8.66091 3.23993 8.07028 3.27368 7.36856 3.38618C7.28841 3.00228 7.16606 2.73368 7.16606 2.73368C7.10419 2.59306 6.95935 2.50728 6.80606 2.51993ZM6.58106 3.29618C6.60778 3.36931 6.62606 3.43821 6.64856 3.52118C5.83716 3.70962 4.94841 4.01759 4.11731 4.53368C3.98653 4.58853 3.90075 4.71509 3.89653 4.85712C3.89372 4.99774 3.97388 5.12853 4.10044 5.1904C4.22841 5.25087 4.38028 5.23259 4.48856 5.14118C6.15638 4.10759 8.27841 3.95993 8.99981 3.95993C9.72122 3.95993 11.8433 4.10759 13.5111 5.14118C13.6193 5.23259 13.7712 5.25087 13.8992 5.1904C14.0258 5.12853 14.1059 4.99774 14.1031 4.85712C14.0989 4.71509 14.0131 4.58853 13.8823 4.53368C13.0512 4.01759 12.1625 3.70962 11.3511 3.52118C11.3736 3.43821 11.3918 3.36931 11.4186 3.29618C11.8292 3.34681 13.4253 3.56196 14.5123 4.42118C14.5826 4.48587 14.8273 4.84587 15.0523 5.34368C15.2773 5.84149 15.5136 6.48978 15.7386 7.23368C16.1773 8.68493 16.5317 10.4751 16.5486 12.1162C16.1393 12.7785 15.3715 13.2707 14.5798 13.5787C13.8598 13.8585 13.1876 13.9837 12.8361 14.0174L12.2286 13.1962C12.5379 13.0963 12.8164 12.9881 13.0611 12.8812C13.9695 12.4818 14.4561 12.0599 14.4561 12.0599C14.6051 11.9263 14.6178 11.6971 14.4842 11.5481C14.3506 11.399 14.1214 11.3863 13.9723 11.5199C13.9723 11.5199 13.5954 11.8645 12.7686 12.2287C12.4648 12.3623 12.0964 12.4945 11.6773 12.6112C11.5803 12.5999 11.4833 12.6281 11.4073 12.6899C10.7365 12.8531 9.93919 12.9599 8.99981 12.9599C8.05341 12.9599 7.25466 12.8432 6.58106 12.6787C6.50513 12.6281 6.41231 12.607 6.32231 12.6224C5.90185 12.5057 5.53622 12.3623 5.23106 12.2287C4.40419 11.8645 4.02731 11.5199 4.02731 11.5199C3.94575 11.444 3.83325 11.4117 3.72356 11.4299C3.58435 11.451 3.46903 11.5509 3.43106 11.6873C3.39169 11.8223 3.43669 11.9685 3.54356 12.0599C3.54356 12.0599 4.03013 12.4818 4.93856 12.8812C5.18325 12.9881 5.46169 13.0963 5.77106 13.1962L5.16356 14.0174C4.812 13.9837 4.13981 13.8585 3.41981 13.5787C2.6281 13.2707 1.86028 12.7785 1.45106 12.1162C1.46794 10.4751 1.82231 8.68493 2.26106 7.23368C2.48606 6.48978 2.72231 5.84149 2.94731 5.34368C3.17231 4.84587 3.417 4.48587 3.48731 4.42118C4.57435 3.56196 6.17044 3.34681 6.58106 3.29618ZM6.65981 7.55993C5.74153 7.55993 5.03981 8.39384 5.03981 9.35993C5.03981 10.326 5.74153 11.1599 6.65981 11.1599C7.5781 11.1599 8.27981 10.326 8.27981 9.35993C8.27981 8.39384 7.5781 7.55993 6.65981 7.55993ZM11.3398 7.55993C10.4215 7.55993 9.71981 8.39384 9.71981 9.35993C9.71981 10.326 10.4215 11.1599 11.3398 11.1599C12.2581 11.1599 12.9598 10.326 12.9598 9.35993C12.9598 8.39384 12.2581 7.55993 11.3398 7.55993ZM6.65981 8.27993C7.13372 8.27993 7.55981 8.73556 7.55981 9.35993C7.55981 9.98431 7.13372 10.4399 6.65981 10.4399C6.18591 10.4399 5.75981 9.98431 5.75981 9.35993C5.75981 8.73556 6.18591 8.27993 6.65981 8.27993ZM11.3398 8.27993C11.8137 8.27993 12.2398 8.73556 12.2398 9.35993C12.2398 9.98431 11.8137 10.4399 11.3398 10.4399C10.8659 10.4399 10.4398 9.98431 10.4398 9.35993C10.4398 8.73556 10.8659 8.27993 11.3398 8.27993Z"
+													fill="black"></path>
+											</svg></div>
+									</a></li>
+							</ul>
+							<div class="navbar_cta-btn is-mob"><a href="#" class="btn outline-small w-button">Log In</a>
+							</div>
+						</nav>
+						<div class="navbar_mobile-btn w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+							role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu"
+							aria-expanded="false">
+							<div class="embed_code w-embed"><svg width="24" height="24" class="navbar_mobile-btn-icon"
+									viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" class="navbar_mobile-btn-line-1" clip-rule="evenodd"
+										d="M2 12C2 11.4477 2.44772 11 3 11H21C21.5523 11 22 11.4477 22 12C22 12.5523 21.5523 13 21 13H3C2.44772 13 2 12.5523 2 12Z"
+										fill="white"></path>
+									<path fill-rule="evenodd" class="navbar_mobile-btn-line-2" clip-rule="evenodd"
+										d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+										fill="white"></path>
+									<path fill-rule="evenodd" class="navbar_mobile-btn-line-3" clip-rule="evenodd"
+										d="M2 18C2 17.4477 2.44772 17 3 17H21C21.5523 17 22 17.4477 22 18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+										fill="white"></path>
+								</svg></div>
+						</div>
+						<div class="navbar_cta-btn"><a href="#" class="btn outline-small w-button">Log In (Coming
+								Soon)</a></div>
+					</div>
+				</div>
+				<div class="w-embed">
+					<style>
+						.navbar_mobile-btn .navbar_mobile-btn-icon * {
+							transition: all 0.25s ease;
+						}
+
+						.navbar_mobile-btn.w--open .navbar_mobile-btn-icon .navbar_mobile-btn-line-1 {
+							transform: rotateZ(-45deg) translate(-3px, 9px);
+							transform-origin: left;
+						}
+
+						.navbar_mobile-btn.w--open .navbar_mobile-btn-icon .navbar_mobile-btn-line-2 {
+							opacity: 0;
+							display: none;
+						}
+
+						.navbar_mobile-btn.w--open .navbar_mobile-btn-icon .navbar_mobile-btn-line-3 {
+							transform: rotateZ(45deg) translate(4px, 2px);
+							transform-origin: right;
+						}
+
+						.navbar-link_item.w--current {
+							color: white;
+						}
+					</style>
+				</div>
+				<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+			</div>
+		</div>
+		<section data-w-id="c907fe8a-0e5d-f52a-f61d-9c7c805b9c34" class="hero_section">
+			<div class="container">
+				<div class="hero_wrapper">
+					<div class="hero_top-wrapper">
+						<div class="hero_title-wrapper">
+							<h1 data-w-id="36abc1c3-8ab6-6e4a-66f5-92ff7de56126" class="heading-style-h1">Buy &amp; sell
+								crypto</h1>
+							<div class="hero_title-bottom">
+								<p data-w-id="f220f5c1-796e-649f-34f7-23a331b788be" class="hero_subtitle-text">Join the
+									fastest and most optimised trading platform in the world.</p>
+								<h2 data-w-id="9557fcc2-35d7-d8b9-79f5-033adaedeb76" class="heading-style-h1">instantly.
+								</h2>
+							</div>
+						</div>
+						<div data-w-id="ec6dc4ce-4a0e-cc0a-df72-05ca323a3dbc" class="hero_cta"><a
+								href="" target="_blank"
+								class="btn fill-white w-button">Use Now</a><a
+								href=""
+								target="_blank" class="btn btn-fill-on-hover w-button">Buy Now</a></div>
+					</div>
+					<div class="hero_bottom-wrapper">
+						<ul role="list" class="social-links_list w-list-unstyled">
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+											class="social-media_icon" width="18" height="17" viewBox="0 0 18 17"
+											fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M13.0989 14.9927C13.3283 15.1551 13.624 15.1957 13.8876 15.096C14.1512 14.9955 14.345 14.7704 14.4035 14.4975C15.0226 11.5876 16.5246 4.22252 17.0882 1.57558C17.1309 1.37608 17.0597 1.16874 16.9029 1.03551C16.7462 0.902268 16.5289 0.863792 16.3351 0.935755C13.3475 2.04155 4.14703 5.49362 0.386458 6.88513C0.147771 6.97348 -0.00755403 7.2029 0.000283471 7.45442C0.00883347 7.70664 0.178408 7.92538 0.422796 7.99877C2.10928 8.50322 4.32302 9.20503 4.32302 9.20503C4.32302 9.20503 5.35757 12.3293 5.89693 13.9182C5.96462 14.1177 6.12066 14.2745 6.32657 14.3286C6.53177 14.3821 6.75122 14.3258 6.90441 14.1811C7.77081 13.3632 9.11031 12.0985 9.11031 12.0985C9.11031 12.0985 11.6554 13.9645 13.0989 14.9927ZM5.25426 8.8103L6.45055 12.7561L6.71631 10.2574C6.71631 10.2574 11.3383 6.08855 13.9731 3.71237C14.0501 3.64254 14.0608 3.52569 13.9966 3.44376C13.9332 3.36182 13.8164 3.34258 13.7287 3.39816C10.675 5.34827 5.25426 8.8103 5.25426 8.8103Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="19"
+											class="social-media_icon" viewBox="0 0 18 19" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.00201 4.88503C6.44808 4.88503 4.38806 6.9455 4.38806 9.5C4.38806 12.0545 6.44808 14.115 9.00201 14.115C11.5559 14.115 13.616 12.0545 13.616 9.5C13.616 6.9455 11.5559 4.88503 9.00201 4.88503ZM9.00201 12.5003C7.35159 12.5003 6.00234 11.1548 6.00234 9.5C6.00234 7.8452 7.34757 6.49967 9.00201 6.49967C10.6564 6.49967 12.0017 7.8452 12.0017 9.5C12.0017 11.1548 10.6524 12.5003 9.00201 12.5003ZM14.8809 4.69625C14.8809 5.29471 14.399 5.77268 13.8047 5.77268C13.2064 5.77268 12.7285 5.29069 12.7285 4.69625C12.7285 4.10181 13.2104 3.61983 13.8047 3.61983C14.399 3.61983 14.8809 4.10181 14.8809 4.69625ZM17.9368 5.78874C17.8685 4.34681 17.5392 3.06956 16.4831 2.01724C15.431 0.964911 14.154 0.635557 12.7124 0.56326C11.2267 0.478913 6.77334 0.478913 5.28756 0.56326C3.84997 0.631541 2.57301 0.960895 1.5169 2.01322C0.460792 3.06555 0.135527 4.3428 0.063246 5.78473C-0.021082 7.27084 -0.021082 11.7251 0.063246 13.2113C0.131511 14.6532 0.460792 15.9304 1.5169 16.9828C2.57301 18.0351 3.84596 18.3644 5.28756 18.4367C6.77334 18.5211 11.2267 18.5211 12.7124 18.4367C14.154 18.3685 15.431 18.0391 16.4831 16.9828C17.5352 15.9304 17.8645 14.6532 17.9368 13.2113C18.0211 11.7251 18.0211 7.27485 17.9368 5.78874ZM16.0173 14.8058C15.7041 15.593 15.0977 16.1995 14.3066 16.5168C13.122 16.9868 10.3111 16.8783 9.00201 16.8783C7.69292 16.8783 4.87797 16.9828 3.69738 16.5168C2.91032 16.2036 2.30396 15.5971 1.98673 14.8058C1.5169 13.6209 1.62532 10.8094 1.62532 9.5C1.62532 8.19062 1.52091 5.37504 1.98673 4.19419C2.29994 3.40695 2.9063 2.80046 3.69738 2.48315C4.88199 2.01322 7.69292 2.12167 9.00201 2.12167C10.3111 2.12167 13.126 2.01724 14.3066 2.48315C15.0937 2.79644 15.7001 3.40293 16.0173 4.19419C16.4871 5.37906 16.3787 8.19062 16.3787 9.5C16.3787 10.8094 16.4871 13.625 16.0173 14.8058Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="17"
+											class="social-media_icon" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.0438858 0.076416L6.99348 9.36869L0 16.9237H1.57395L7.69674 10.3092L12.6438 16.9237H18L10.6594 7.10875L17.1689 0.076416H15.5949L9.95613 6.16826L5.40011 0.076416H0.0438858ZM2.3585 1.23579H4.81916L15.685 15.7641H13.2244L2.3585 1.23579Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="13"
+											class="socila-media_icon" viewBox="0 0 18 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.6239 2.15215C17.4169 1.37267 16.8069 0.758775 16.0325 0.550441C14.6288 0.171875 9 0.171875 9 0.171875C9 0.171875 3.37127 0.171875 1.96752 0.550441C1.19308 0.758808 0.583143 1.37267 0.376127 2.15215C0 3.565 0 6.51278 0 6.51278C0 6.51278 0 9.46056 0.376127 10.8734C0.583143 11.6529 1.19308 12.2412 1.96752 12.4495C3.37127 12.8281 9 12.8281 9 12.8281C9 12.8281 14.6287 12.8281 16.0325 12.4495C16.8069 12.2412 17.4169 11.6529 17.6239 10.8734C18 9.46056 18 6.51278 18 6.51278C18 6.51278 18 3.565 17.6239 2.15215ZM7.15908 9.18915V3.83642L11.8636 6.51285L7.15908 9.18915Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="11"
+											class="social-media_icon" viewBox="0 0 18 11" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.24703 1.00221C2.78392 1.00221 0.782608 3.01273 0.782608 5.49994C0.782608 7.98719 2.78378 9.99782 5.24703 9.99782C7.71023 9.99782 9.71164 7.9865 9.71164 5.49994C9.71164 3.01338 7.7101 1.00221 5.24703 1.00221ZM0 5.49994C0 2.58549 2.34674 0.219604 5.24703 0.219604C7.6519 0.219604 9.67632 1.84673 10.2978 4.06377C10.4222 3.30809 10.6431 2.62423 10.9391 2.06326C11.4042 1.18145 12.1144 0.506344 13.002 0.506344C13.8895 0.506344 14.5997 1.18146 15.0648 2.06326C15.2938 2.4974 15.4779 3.00514 15.6071 3.56282C15.649 3.17328 15.7032 2.81683 15.7678 2.50507C15.8478 2.11859 15.9479 1.77999 16.071 1.52853C16.1322 1.4036 16.2088 1.27971 16.3077 1.18194C16.4078 1.08298 16.5586 0.985167 16.7549 0.985167C16.9511 0.985167 17.1019 1.08292 17.202 1.18189C17.301 1.27966 17.3776 1.40354 17.4387 1.52846C17.5618 1.7799 17.6619 2.11846 17.7419 2.50491C17.9032 3.28425 18 4.34296 18 5.49994C18 6.65701 17.9031 7.71573 17.7417 8.49506C17.6617 8.8815 17.5616 9.22004 17.4385 9.47146C17.3774 9.59637 17.3008 9.72024 17.2018 9.81799C17.1017 9.91694 16.9509 10.0147 16.7547 10.0147C16.5584 10.0147 16.4077 9.91687 16.3076 9.81791C16.2086 9.72014 16.1321 9.59625 16.0709 9.47132C15.9478 9.21987 15.8478 8.88129 15.7678 8.49481C15.7032 8.18311 15.649 7.82673 15.6072 7.43727C15.4779 7.995 15.2938 8.50275 15.0648 8.93688C14.5996 9.81865 13.8895 10.4935 13.002 10.4935C12.1144 10.4935 11.4042 9.81841 10.9391 8.9366C10.6431 8.37564 10.4222 7.69179 10.2978 6.93613C9.67636 9.15318 7.65204 10.7804 5.24703 10.7804C2.34655 10.7804 0 8.41439 0 5.49994ZM11.6313 2.42841C11.2271 3.19456 10.9653 4.27993 10.9653 5.49994C10.9653 6.71993 11.2271 7.8053 11.6313 8.57145C12.0449 9.35548 12.5487 9.71091 13.002 9.71091C13.4553 9.71091 13.9591 9.3556 14.3726 8.57171C14.7768 7.80566 15.0385 6.7203 15.0385 5.49994C15.0385 4.27993 14.7768 3.19456 14.3726 2.4284C13.959 1.64437 13.4552 1.28895 13.002 1.28895C12.5487 1.28895 12.0449 1.64438 11.6313 2.42841ZM16.5341 2.66378C16.3864 3.37693 16.2921 4.37995 16.2921 5.49994C16.2921 6.61993 16.3864 7.62296 16.5341 8.33612C16.6028 8.66783 16.6795 8.91929 16.7548 9.08658C16.83 8.91935 16.9067 8.66797 16.9754 8.33634C17.1231 7.62327 17.2174 6.62025 17.2174 5.49994C17.2174 4.37968 17.1231 3.37665 16.9755 2.66357C16.9068 2.33183 16.8301 2.08039 16.7549 1.91317C16.6796 2.08044 16.6029 2.33196 16.5341 2.66378Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="" target="_blank"
+									class="social-link_item w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="15"
+											class="social-link_icon is-white" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.61551 0.848972C6.61551 0.848972 4.12403 1.02017 2.49463 2.32858C2.48699 2.33163 2.47782 2.33622 2.47018 2.3408C2.1874 2.60218 1.97494 3.00724 1.71203 3.58807C1.44913 4.16891 1.17094 4.91635 0.917205 5.75245C0.411266 7.42618 9.56309e-05 9.48051 9.56309e-05 11.4141C-0.00143279 11.4829 0.015381 11.5501 0.0490082 11.6097C0.620673 12.614 1.67229 13.2208 2.6536 13.6029C3.63491 13.985 4.54132 14.1379 5.0014 14.1532C5.13133 14.1578 5.25514 14.0982 5.33156 13.9942L6.28536 12.6736C7.0542 12.8555 7.95602 12.9793 9 12.9793C10.044 12.9793 10.9458 12.8555 11.7146 12.6736L12.6684 13.9942C12.7449 14.0982 12.8687 14.1578 12.9986 14.1532C13.4587 14.1379 14.3651 13.985 15.3464 13.6029C16.3277 13.2208 17.3793 12.614 17.951 11.6097C17.9846 11.5501 18.0014 11.4829 17.9999 11.4141C17.9999 9.48051 17.5887 7.42618 17.0828 5.75245C16.8291 4.91635 16.5509 4.16891 16.288 3.58807C16.0251 3.00724 15.8126 2.60218 15.5298 2.3408C15.5222 2.33622 15.513 2.33163 15.5054 2.32858C13.876 1.02017 11.3845 0.848972 11.3845 0.848972C11.3554 0.845915 11.3279 0.845915 11.2989 0.848972C11.1629 0.867315 11.0482 0.955969 10.9932 1.08131C10.9932 1.08131 10.8602 1.37325 10.7731 1.79054C10.0103 1.66826 9.36837 1.63157 9 1.63157C8.63163 1.63157 7.98965 1.66826 7.22692 1.79054C7.1398 1.37325 7.00681 1.08131 7.00681 1.08131C6.93956 0.928455 6.78212 0.835216 6.61551 0.848972ZM6.37095 1.69271C6.39999 1.7722 6.41986 1.84709 6.44432 1.93728C5.56237 2.1421 4.59634 2.47684 3.69299 3.03781C3.55084 3.09742 3.4576 3.23499 3.45301 3.38937C3.44996 3.54222 3.53708 3.68437 3.67465 3.75163C3.81374 3.81735 3.97882 3.79748 4.09652 3.69813C5.90934 2.57467 8.21587 2.41417 9 2.41417C9.78413 2.41417 12.0907 2.57467 13.9035 3.69813C14.0212 3.79748 14.1863 3.81735 14.3254 3.75163C14.4629 3.68437 14.55 3.54222 14.547 3.38937C14.5424 3.23499 14.4492 3.09742 14.307 3.03781C13.4037 2.47684 12.4376 2.1421 11.5557 1.93728C11.5801 1.84709 11.6 1.7722 11.629 1.69271C12.0754 1.74774 13.8102 1.9816 14.9918 2.91553C15.0682 2.98584 15.3342 3.37714 15.5787 3.91823C15.8233 4.45933 16.0801 5.16397 16.3247 5.97256C16.8015 7.54999 17.1867 9.49579 17.2051 11.2796C16.7603 11.9995 15.9257 12.5345 15.0652 12.8692C14.2826 13.1734 13.5519 13.3094 13.1698 13.3461L12.5095 12.4535C12.8457 12.3449 13.1484 12.2272 13.4144 12.1111C14.4018 11.677 14.9306 11.2184 14.9306 11.2184C15.0927 11.0732 15.1064 10.8241 14.9612 10.662C14.816 10.5 14.5669 10.4863 14.4048 10.6315C14.4048 10.6315 13.9952 11.006 13.0964 11.4019C12.7663 11.5471 12.3658 11.6907 11.9103 11.8176C11.8048 11.8054 11.6994 11.8359 11.6168 11.9032C10.8877 12.0805 10.021 12.1967 9 12.1967C7.97131 12.1967 7.10311 12.0698 6.37095 11.891C6.28841 11.8359 6.18753 11.813 6.0897 11.8298C5.63268 11.703 5.23526 11.5471 4.90358 11.4019C4.00481 11.006 3.59517 10.6315 3.59517 10.6315C3.50651 10.5489 3.38423 10.5138 3.26501 10.5337C3.11368 10.5566 2.98835 10.6651 2.94708 10.8134C2.90428 10.9601 2.95319 11.1191 3.06936 11.2184C3.06936 11.2184 3.59822 11.677 4.58564 12.1111C4.85161 12.2272 5.15425 12.3449 5.49053 12.4535L4.83021 13.3461C4.44808 13.3094 3.71745 13.1734 2.93485 12.8692C2.07429 12.5345 1.23972 11.9995 0.794924 11.2796C0.813266 9.49579 1.19845 7.54999 1.67535 5.97256C1.91991 5.16397 2.1767 4.45933 2.42127 3.91823C2.66583 3.37714 2.93179 2.98584 3.00822 2.91553C4.18976 1.9816 5.92462 1.74774 6.37095 1.69271ZM6.45655 6.32718C5.45843 6.32718 4.6957 7.23359 4.6957 8.28368C4.6957 9.33377 5.45843 10.2402 6.45655 10.2402C7.45467 10.2402 8.2174 9.33377 8.2174 8.28368C8.2174 7.23359 7.45467 6.32718 6.45655 6.32718ZM11.5435 6.32718C10.5453 6.32718 9.7826 7.23359 9.7826 8.28368C9.7826 9.33377 10.5453 10.2402 11.5435 10.2402C12.5416 10.2402 13.3043 9.33377 13.3043 8.28368C13.3043 7.23359 12.5416 6.32718 11.5435 6.32718ZM6.45655 7.10978C6.97166 7.10978 7.4348 7.60502 7.4348 8.28368C7.4348 8.96234 6.97166 9.45758 6.45655 9.45758C5.94144 9.45758 5.4783 8.96234 5.4783 8.28368C5.4783 7.60502 5.94144 7.10978 6.45655 7.10978ZM11.5435 7.10978C12.0586 7.10978 12.5217 7.60502 12.5217 8.28368C12.5217 8.96234 12.0586 9.45758 11.5435 9.45758C11.0283 9.45758 10.5652 8.96234 10.5652 8.28368C10.5652 7.60502 11.0283 7.10978 11.5435 7.10978Z"
+												fill="white"></path>
+										</svg></div>
+								</a></li>
+						</ul>
+						<div class="hero_bottom-label-text"><span class="hero_bottom-label-text is-large">700+</span>
+							trusted traders</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero_lottie-bg" data-w-id="1f655a75-5505-d8f4-172a-56d0e5dda8e8" data-animation-type="lottie"
+				data-src="https://uploads-ssl.webflow.com/64fb18e1a80ba54bbd3dca0c/64fb18e1a80ba54bbd3dca31_swift-bg-v3.json"
+				data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+				data-default-duration="13.983333333333333" data-duration="0"><svg xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" width="1920" height="1200"
+					style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"
+					preserveAspectRatio="xMidYMid meet">
+					<defs>
+						<clipPath id="__lottie_element_25">
+							<rect width="1920" height="1200" x="0" y="0"></rect>
+						</clipPath>
+						<image xlink:href="642708a61ef3faa0682f98c5182e1f751542df17.png"></image>
+					</defs>
+					<g clip-path="url(#__lottie_element_25)">
+						<g class="png" style="display: block;"
+							transform="matrix(3.921708345413208,-0.499544233083725,0.3217403292655945,2.525845766067505,-137.9122314453125,135.2862548828125)"
+							opacity="1">
+							<image width="482px" height="484px" preserveAspectRatio="xMidYMid slice"
+								xlink:href="642708a61ef3faa0682f98c5182e1f751542df17.png"></image>
+						</g>
+					</g>
+				</svg></div>
+		</section>
+		<section class="overview_section">
+			<div class="container">
+				<div data-w-id="4cd6d85d-cbdc-1284-87d9-7c7bebe2f291" class="overview_wrapper">
+					<h2 class="heading-style-h2">overview</h2>
+					<div class="overview_main">
+						<h3 class="heading-style-h3">What is Swift?</h3>
+						<h4 class="heading-style-h4">In the fast-paced world of cryptocurrency, speed and agility are
+							key factors in maximising profits.</h4>
+						<p class="regular-text is-faded">Swift offers traders to reap the benefits of a fast, reliable
+							and affordable trading bot that can give you an edge in the market, allowing you to enter
+							and exit trades quickly, thereby increasing your chances of making profitable trades.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-w-id="6a88b43a-3611-4965-2777-5921e6f67373" class="circles_section">
+			<div class="container">
+				<div class="circles_wrapper">
+					<div data-w-id="6b5fb406-64aa-f27f-85fb-5ceb85a64d2a" data-is-ix2-target="1"
+						class="circles_image is-lottie" data-animation-type="lottie"
+						data-src="https://uploads-ssl.webflow.com/64fb18e1a80ba54bbd3dca0c/64fb18e1a80ba54bbd3dca30_swift-overview.json"
+						data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
+						data-default-duration="4.037370539591901" data-duration="0" data-ix2-initial-state="0"><svg
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 1440 350" width="1440" height="350"
+							style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"
+							preserveAspectRatio="xMidYMid meet">
+							<defs>
+								<clipPath id="__lottie_element_3">
+									<rect width="1440" height="350" x="0" y="0"></rect>
+								</clipPath>
+								<image xlink:href="450b5ec412cff1d194bd3f63f47c81ca6fd614bd.png"></image>
+							</defs>
+							<g clip-path="url(#__lottie_element_3)">
+								<g style="display: block;" transform="matrix(1,0,0,1.0322400331497192,668,175)"
+									opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-574.4840087890625,12.515999794006348)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-49.515499114990234 C27.327604293823242,-49.515499114990234 49.515499114990234,-27.327604293823242 49.515499114990234,0 C49.515499114990234,27.327604293823242 27.327604293823242,49.515499114990234 0,49.515499114990234 C-27.327604293823242,49.515499114990234 -49.515499114990234,27.327604293823242 -49.515499114990234,0 C-49.515499114990234,-27.327604293823242 -27.327604293823242,-49.515499114990234 0,-49.515499114990234z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-49.515499114990234 C27.327604293823242,-49.515499114990234 49.515499114990234,-27.327604293823242 49.515499114990234,0 C49.515499114990234,27.327604293823242 27.327604293823242,49.515499114990234 0,49.515499114990234 C-27.327604293823242,49.515499114990234 -49.515499114990234,27.327604293823242 -49.515499114990234,0 C-49.515499114990234,-27.327604293823242 -27.327604293823242,-49.515499114990234 0,-49.515499114990234z">
+										</path>
+									</g>
+								</g>
+								<g style="display: block;" transform="matrix(1,0,0,1,670,175)" opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-513.6640014648438,11.336000442504883)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-60.33599853515625 C33.2994384765625,-60.33599853515625 60.33599853515625,-33.2994384765625 60.33599853515625,0 C60.33599853515625,33.2994384765625 33.2994384765625,60.33599853515625 0,60.33599853515625 C-33.2994384765625,60.33599853515625 -60.33599853515625,33.2994384765625 -60.33599853515625,0 C-60.33599853515625,-33.2994384765625 -33.2994384765625,-60.33599853515625 0,-60.33599853515625z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-60.33599853515625 C33.2994384765625,-60.33599853515625 60.33599853515625,-33.2994384765625 60.33599853515625,0 C60.33599853515625,33.2994384765625 33.2994384765625,60.33599853515625 0,60.33599853515625 C-33.2994384765625,60.33599853515625 -60.33599853515625,33.2994384765625 -60.33599853515625,0 C-60.33599853515625,-33.2994384765625 -33.2994384765625,-60.33599853515625 0,-60.33599853515625z">
+										</path>
+									</g>
+								</g>
+								<g style="display: block;" transform="matrix(1,0,0,1,650,175)" opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-439.0880126953125,12.248000144958496)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-71.74800109863281 C39.597721099853516,-71.74800109863281 71.74800109863281,-39.597721099853516 71.74800109863281,0 C71.74800109863281,39.597721099853516 39.597721099853516,71.74800109863281 0,71.74800109863281 C-39.597721099853516,71.74800109863281 -71.74800109863281,39.597721099853516 -71.74800109863281,0 C-71.74800109863281,-39.597721099853516 -39.597721099853516,-71.74800109863281 0,-71.74800109863281z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-71.74800109863281 C39.597721099853516,-71.74800109863281 71.74800109863281,-39.597721099853516 71.74800109863281,0 C71.74800109863281,39.597721099853516 39.597721099853516,71.74800109863281 0,71.74800109863281 C-39.597721099853516,71.74800109863281 -71.74800109863281,39.597721099853516 -71.74800109863281,0 C-71.74800109863281,-39.597721099853516 -39.597721099853516,-71.74800109863281 0,-71.74800109863281z">
+										</path>
+									</g>
+								</g>
+								<g style="display: block;" transform="matrix(1,0,0,1,644,175)" opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-344.4360046386719,11.803000450134277)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-88.30249786376953 C48.73414993286133,-88.30249786376953 88.30249786376953,-48.73414993286133 88.30249786376953,0 C88.30249786376953,48.73414993286133 48.73414993286133,88.30249786376953 0,88.30249786376953 C-48.73414993286133,88.30249786376953 -88.30249786376953,48.73414993286133 -88.30249786376953,0 C-88.30249786376953,-48.73414993286133 -48.73414993286133,-88.30249786376953 0,-88.30249786376953z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-88.30249786376953 C48.73414993286133,-88.30249786376953 88.30249786376953,-48.73414993286133 88.30249786376953,0 C88.30249786376953,48.73414993286133 48.73414993286133,88.30249786376953 0,88.30249786376953 C-48.73414993286133,88.30249786376953 -88.30249786376953,48.73414993286133 -88.30249786376953,0 C-88.30249786376953,-48.73414993286133 -48.73414993286133,-88.30249786376953 0,-88.30249786376953z">
+										</path>
+									</g>
+								</g>
+								<g style="display: block;" transform="matrix(1,0,0,1,630,175)" opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-248.25799560546875,10.765999794006348)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-102.53900146484375 C56.59127426147461,-102.53900146484375 102.53900146484375,-56.59127426147461 102.53900146484375,0 C102.53900146484375,56.59127426147461 56.59127426147461,102.53900146484375 0,102.53900146484375 C-56.59127426147461,102.53900146484375 -102.53900146484375,56.59127426147461 -102.53900146484375,0 C-102.53900146484375,-56.59127426147461 -56.59127426147461,-102.53900146484375 0,-102.53900146484375z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-102.53900146484375 C56.59127426147461,-102.53900146484375 102.53900146484375,-56.59127426147461 102.53900146484375,0 C102.53900146484375,56.59127426147461 56.59127426147461,102.53900146484375 0,102.53900146484375 C-56.59127426147461,102.53900146484375 -102.53900146484375,56.59127426147461 -102.53900146484375,0 C-102.53900146484375,-56.59127426147461 -56.59127426147461,-102.53900146484375 0,-102.53900146484375z">
+										</path>
+									</g>
+								</g>
+								<g style="display: block;" transform="matrix(1,0,0,1,618,175)" opacity="1">
+									<g opacity="1" transform="matrix(1,0,0,1,-116.19499969482422,11.270000457763672)">
+										<path fill="rgb(102,61,209)" fill-opacity="0"
+											d=" M0,-116.1989974975586 C64.1302261352539,-116.1989974975586 116.1989974975586,-64.1302261352539 116.1989974975586,0 C116.1989974975586,64.1302261352539 64.1302261352539,116.1989974975586 0,116.1989974975586 C-64.1302261352539,116.1989974975586 -116.1989974975586,64.1302261352539 -116.1989974975586,0 C-116.1989974975586,-64.1302261352539 -64.1302261352539,-116.1989974975586 0,-116.1989974975586z">
+										</path>
+										<path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0"
+											stroke-miterlimit="4" stroke="rgb(255,255,255)" stroke-opacity="1"
+											stroke-width="2"
+											d=" M0,-116.1989974975586 C64.1302261352539,-116.1989974975586 116.1989974975586,-64.1302261352539 116.1989974975586,0 C116.1989974975586,64.1302261352539 64.1302261352539,116.1989974975586 0,116.1989974975586 C-64.1302261352539,116.1989974975586 -116.1989974975586,64.1302261352539 -116.1989974975586,0 C-116.1989974975586,-64.1302261352539 -64.1302261352539,-116.1989974975586 0,-116.1989974975586z">
+										</path>
+									</g>
+								</g>
+								<g class="png" style="display: block;"
+									transform="matrix(0.8041200041770935,0,0,0.8041200041770935,342.8048400878906,30.000717163085938)"
+									opacity="1">
+									<image width="386px" height="388px" preserveAspectRatio="xMidYMid slice"
+										xlink:href="450b5ec412cff1d194bd3f63f47c81ca6fd614bd.png"></image>
+								</g>
+							</g>
+						</svg></div>
+				</div>
+			</div>
+		</section>
+		<section class="create-profile_section">
+			<div class="container">
+				<div data-w-id="29c67955-75af-b075-bf0a-2b5d37d7e2c1" class="create-profile_wrapper">
+					<h2 class="heading-style-h2 align-right">create profile</h2>
+					<div class="create-profile_main">
+						<h3 class="heading-style-h3">Easy way to get started</h3>
+						<div class="create-profile_steps">
+							<div class="create-profile_step-item">
+								<div class="create-profile_step-header">
+									<div class="create-profile_step-icon is-step-1"><img
+											src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+											loading="lazy" alt="" class="step-icon_circle is-gradient-step-1"><img
+											src="64fb18e1a80ba54bbd3dca1d_create-profile-steps-circle-outline.svg"
+											loading="lazy" alt="" class="step-icon_circle is-outline-step-1"></div><img
+										src="64fb18e1a80ba54bbd3dca1e_create-profile-steps-line.svg" loading="lazy"
+										alt="" class="create-profile_step-bar">
+								</div>
+								<div class="create-profile_step-main">
+									<h4 class="heading-style-h4">Create account</h4>
+									<p class="regular-text is-faded">Sign up or Start using the bot.</p>
+								</div><img src="64fb18e1a80ba54bbd3dca20_create-profile-step-line-mob.svg"
+									loading="lazy" alt="" class="create-profile_step-bar is-mob">
+							</div>
+							<div class="create-profile_step-item">
+								<div class="create-profile_step-header">
+									<div class="create-profile_step-icon is-step-2"><img
+											src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+											loading="lazy" alt="" class="step-icon_circle is-gradient-step-2"><img
+											src="64fb18e1a80ba54bbd3dca1d_create-profile-steps-circle-outline.svg"
+											loading="lazy" alt="" class="step-icon_circle is-outline-step-2"></div><img
+										src="64fb18e1a80ba54bbd3dca1e_create-profile-steps-line.svg" loading="lazy"
+										alt="" class="create-profile_step-bar">
+								</div>
+								<div class="create-profile_step-main">
+									<h4 class="heading-style-h4">Connect wallet</h4>
+									<p class="regular-text is-faded">Connect an existing wallet.</p>
+								</div><img src="64fb18e1a80ba54bbd3dca20_create-profile-step-line-mob.svg"
+									loading="lazy" alt="" class="create-profile_step-bar is-mob">
+							</div>
+							<div class="create-profile_step-item">
+								<div class="create-profile_step-header">
+									<div class="create-profile_step-icon is-step-3"><img
+											src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+											loading="lazy" alt="" class="step-icon_circle is-gradient-step-3"><img
+											src="64fb18e1a80ba54bbd3dca1d_create-profile-steps-circle-outline.svg"
+											loading="lazy" alt="" class="step-icon_circle is-outline-step-3"></div><img
+										src="64fb18e1a80ba54bbd3dca1e_create-profile-steps-line.svg" loading="lazy"
+										alt="" class="create-profile_step-bar">
+								</div>
+								<div class="create-profile_step-main">
+									<h4 class="heading-style-h4">Generate wallet</h4>
+									<p class="regular-text is-faded">Quickly generate a wallet to trade.</p>
+								</div><img src="64fb18e1a80ba54bbd3dca20_create-profile-step-line-mob.svg"
+									loading="lazy" alt="" class="create-profile_step-bar is-mob">
+							</div>
+							<div id="w-node-_9bd25b4d-230e-937c-3736-23ae22007fae-bd3dca0a"
+								class="create-profile_step-item">
+								<div class="create-profile_step-header">
+									<div class="create-profile_step-icon is-step-4"><img
+											src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+											loading="lazy" alt="" class="step-icon_circle is-gradient-step-4"><img
+											src="64fb18e1a80ba54bbd3dca1d_create-profile-steps-circle-outline.svg"
+											loading="lazy" alt="" class="step-icon_circle is-outline-step-4"></div><img
+										src="64fb18e1a80ba54bbd3dca1f_create-profile-step-line-arrow.svg" loading="lazy"
+										alt="" class="create-profile_step-bar">
+								</div>
+								<div class="create-profile_step-main">
+									<h4 class="heading-style-h4">Start trading instantly</h4>
+									<p class="regular-text is-faded">Buy &amp; Sell a variety of coins at the best
+										prices.</p>
+								</div><img src="64fb18e1a80ba54bbd3dca21_create-profile-step-line-arrow-mob.svg"
+									loading="lazy" alt="" class="create-profile_step-bar is-mob">
+							</div>
+							<div id="w-node-_4ef5396c-270a-0a06-ef9b-1bd1e1b47f5f-bd3dca0a" class="create-profile_cta">
+								<a id="w-node-fffca74f-5caa-0b74-acd6-4f36611d5bc0-611d5bc0"
+									href="" target="_blank"
+									class="btn fill-small w-button">Start Trading</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-embed">
+				<style>
+					@media(min-width: 992px) {
+						.create-profile_step-icon * {
+							transition: all 0.45s ease;
+						}
+
+						/* Step 1 */
+						.create-profile_step-icon.is-step-1:hover .step-icon_circle:first-child {
+							transform: translate(20px, -20px) scale(1.4);
+						}
+
+						.create-profile_step-icon.is-step-1:hover .step-icon_circle:last-child {
+							transform: translate(-5px, 5px);
+						}
+
+						/* Step 2 */
+						.create-profile_step-icon.is-step-2:hover .step-icon_circle:first-child {
+							transform: translate(20px, 0px) scale(1.4);
+						}
+
+						.create-profile_step-icon.is-step-2:hover .step-icon_circle:last-child {
+							transform: translate(-15px, 0px);
+						}
+
+						/* Step 3 */
+						.create-profile_step-icon.is-step-3:hover .step-icon_circle:first-child {
+							transform: translate(20px, 20px) scale(1.4);
+						}
+
+						.create-profile_step-icon.is-step-3:hover .step-icon_circle:last-child {
+							transform: translate(-10px, -10px);
+						}
+
+						/* Step 4 */
+						.create-profile_step-icon.is-step-4:hover .step-icon_circle:first-child {
+							transform: scale(1.4);
+						}
+
+						.create-profile_step-icon.is-step-4:hover .step-icon_circle:last-child {
+							transform: scale(1.2);
+						}
+					}
+				</style>
+			</div>
+		</section>
+		<section class="roadmap_section">
+			<div class="container">
+				<div data-w-id="8f0d7399-6290-85c2-41b8-5e5a53d45381" class="roadmap_wrapper">
+					<h2 class="heading-style-h2">Roadmap</h2>
+					<div class="roadmap_main">
+						<div class="roadmap_card is-first-child">
+							<h3 class="heading-style-h3">Phase 1</h3>
+							<ul role="list" class="roadmap_card-list w-list-unstyled">
+								<li class="roadmap_list-item">
+									<div>- Launch of $SWIFT</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Token Listings</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Marketing Push</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Special Features</div>
+								</li>
+							</ul>
+						</div>
+						<div class="roadmap_card is-second-child">
+							<h3 class="heading-style-h3">Phase 2</h3>
+							<ul role="list" class="roadmap_card-list w-list-unstyled">
+								<li class="roadmap_list-item">
+									<div>- Organic Marketing</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Beta of Application</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Partnership Growth</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Educational Marketing</div>
+								</li>
+							</ul>
+						</div>
+						<div id="w-node-_0ed0313f-1b14-85ff-4c81-40da19887f47-bd3dca0a" class="roadmap_card">
+							<h3 class="heading-style-h3">Phase 3</h3>
+							<ul role="list" class="roadmap_card-list w-list-unstyled">
+								<li class="roadmap_list-item">
+									<div>- Launch of Application</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Market Growth</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Marketing Push</div>
+								</li>
+								<li class="roadmap_list-item">
+									<div>- Organic Volume</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="join_section">
+			<div class="container">
+				<div data-w-id="f84f2c1a-4d35-c6c3-0a40-ee35125a8dae" class="join_wrapper">
+					<h2 class="heading-style-h2">join our membership</h2>
+					<div class="join_main">
+						<div class="join_options">
+							<div class="join_option-item">
+								<h3 class="heading-style-h3">Lite</h3>
+								<div id="w-node-_5b0ecc07-7990-f28e-8408-8d9bfd9229a7-bd3dca0a"
+									class="join_option-item-cost">
+									<h4 class="heading-style-h4">Free</h4>
+									<div class="regular-text is-faded">1% fee on every transaction</div>
+								</div>
+								<ul role="list" class="join_option-item-list">
+									<li>
+										<div class="regular-text is-faded">Shared Node Clusters</div>
+									</li>
+									<li>
+										<div class="regular-text is-faded">Up to 25 Multi Wallets</div>
+									</li>
+									<li>
+										<div class="regular-text is-faded">24/7 Support</div>
+									</li>
+								</ul>
+								<div class="join_option-cta"><a href="" target="_blank"
+										class="btn outline-small w-button">Use Now</a></div>
+							</div>
+							<div class="join_option-separator"></div>
+							<div class="join_option-item">
+								<h3 class="heading-style-h3">Pro</h3>
+								<div class="join_option-item-cost">
+									<h4 class="heading-style-h4">Starting at 0.1 ETH</h4>
+									<div class="regular-text is-faded">Billed monthly</div>
+								</div>
+								<ul role="list" class="join_option-item-list">
+									<li>
+										<div class="regular-text is-faded">All Features in Swift Lite +&nbsp;</div>
+									</li>
+									<li>
+										<div class="regular-text is-faded">Individual Nodes</div>
+									</li>
+									<li>
+										<div class="regular-text is-faded">Early Access to new features</div>
+									</li>
+									<li>
+										<div class="regular-text is-faded">Dedicated 24/7 Support</div>
+									</li>
+								</ul>
+								<div class="join_option-cta"><a
+										id="w-node-fffca74f-5caa-0b74-acd6-4f36611d5bc0-611d5bc0"
+										href="" target="_blank"
+										class="btn fill-small w-button">Use Now</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="download-app_section">
+			<div class="container">
+				<div data-w-id="df864625-a166-914b-9085-d720315b0d08" class="download-app_wrapper">
+					<div class="download-app_main">
+						<div class="download-app_title-wrapper">
+							<h2 class="heading-style-h2 is-capital-case">Download app</h2>
+							<div class="regular-text is-faded">Install the Swift Trading App and make use of all of
+								Swift's fastest features.</div>
+						</div><img src="64fb18e1a80ba54bbd3dca28_mockup-mob-min.webp" loading="lazy" alt=""
+							class="download-app_phone is-mob">
+						<div class="download-app_download-info"><a href="#" class="w-inline-block"><img
+									src="64fb18e1a80ba54bbd3dca23_app-store.svg" loading="lazy" alt="App Store"
+									class="download-app_store-icon"></a><a href="#" class="w-inline-block"><img
+									src="64fb18e1a80ba54bbd3dca25_google-pay.svg" loading="lazy" alt="Google Play"
+									class="download-app_store-icon"></a>
+							<div id="w-node-e449e170-e21c-919b-53c6-fa4a7f0231e9-bd3dca0a"
+								class="download-app_store-items-separator"></div><a href="#"
+								class="download-app_windows-pc-store w-inline-block"><img
+									src="64fb18e1a80ba54bbd3dca22_windows.svg" loading="lazy" alt="Windows"
+									class="download-app_store-icon"></a><a href="#"
+								class="download-app_mac-pc-store w-inline-block"><img
+									src="64fb18e1a80ba54bbd3dca24_mac-store.svg" loading="lazy" alt="Mac App Store"
+									class="download-app_store-icon"></a>
+						</div>
+					</div><img src="64fb18e1a80ba54bbd3dca27_mockup-phone-min.webp" loading="lazy"
+						sizes="(max-width: 767px) 100vw, 294.578125px"
+						srcset="64fb18e1a80ba54bbd3dca27_mockup-phone-min-p-500.png 500w, 64fb18e1a80ba54bbd3dca27_mockup-phone-min.webp 1232w"
+						alt="" class="download-app_phone">
+				</div>
+			</div>
+		</section>
+		<section class="why-swift_section">
+			<div class="container">
+				<div data-w-id="8af830c7-88c6-4a11-c1c2-744e6a4bfdfe" class="why-swift_wrapper">
+					<h2 class="heading-style-h2 align-right">why use swift?</h2>
+					<div class="why-swift_main">
+						<h3 class="heading-style-h3">Benefits</h3>
+						<div class="why-swift_benefits-list">
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Safety Comes First</h4>
+								</div>
+								<p class="regular-text is-faded">Swift Ensures that every user feels safe. All wallet
+									details are fully encrypted and code is audited.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Easy Deposit &amp; Withdrawals</h4>
+								</div>
+								<p class="regular-text is-faded">Easily Access and Withdraw your funds with zero fees.
+								</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Low Charges</h4>
+								</div>
+								<p class="regular-text is-faded">Swift gives back to its community by offering very low
+									charges. Swift charges 1% of every transaction.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Affiliate Program</h4>
+								</div>
+								<p class="regular-text is-faded">Affiliate program allows influencers and users to make
+									money off Swift and turn our application into their own income model.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Fast Transactions</h4>
+								</div>
+								<p class="regular-text is-faded">Utilizing the fastest nodes on the blockchain, Swift
+									offers maximum speed for it's users.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Deep Encryption</h4>
+								</div>
+								<p class="regular-text is-faded">All wallet details are completely encrypted. Swift has
+									no access to your information.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">Auto Contract Audits</h4>
+								</div>
+								<p class="regular-text is-faded">Swift offers users full contract details, such as:
+									Renounced and Lock Duration.</p>
+							</div>
+							<div class="benefits-list_item">
+								<div class="benefits-list_item-header"><img
+										src="64fb18e1a80ba54bbd3dca1c_create-profile-steps-circle-gradient.svg"
+										loading="lazy" alt="" class="benfits-list-item_icon">
+									<h4 class="heading-style-h4">24/7 Support</h4>
+								</div>
+								<p class="regular-text is-faded">When using Swift, we offer 24/7 support for Free and
+									Pro Users.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about_section">
+			<div class="container">
+				<div data-w-id="1eb6a9e7-115c-f9f0-3290-aec613fbfdd6" class="about_wrapper">
+					<h2 class="heading-style-h2">developer &amp; founder</h2>
+					<div class="about_main">
+						<div id="w-node-_3deffe26-77cc-a1b9-c157-7a5b721601f8-bd3dca0a" class="about_main-text">
+							<h3 class="heading-style-h3 about_author-name">Kyle Grange</h3>
+							<div class="about_author-bio">Founder &amp; Developer of Swift</div>
+							<p class="regular-text is-faded">Kyle possesses over six years of extensive experience in
+								the blockchain industry, demonstrating an unwavering commitment to professionalism and
+								excellence in all his endeavors. With a strong focus on innovation, Kyle is dedicated to
+								leaving a lasting and profound impact on the blockchain space, contributing
+								significantly to its evolution and development for years to come.</p>
+							<ul role="list" class="social-links_list about-list w-list-unstyled">
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="19"
+												class="social-link_icon is-white" viewBox="0 0 18 19" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M9.00201 4.88503C6.44808 4.88503 4.38806 6.9455 4.38806 9.5C4.38806 12.0545 6.44808 14.115 9.00201 14.115C11.5559 14.115 13.616 12.0545 13.616 9.5C13.616 6.9455 11.5559 4.88503 9.00201 4.88503ZM9.00201 12.5003C7.35159 12.5003 6.00234 11.1548 6.00234 9.5C6.00234 7.8452 7.34757 6.49967 9.00201 6.49967C10.6564 6.49967 12.0017 7.8452 12.0017 9.5C12.0017 11.1548 10.6524 12.5003 9.00201 12.5003ZM14.8809 4.69625C14.8809 5.29471 14.399 5.77268 13.8047 5.77268C13.2064 5.77268 12.7285 5.29069 12.7285 4.69625C12.7285 4.10181 13.2104 3.61983 13.8047 3.61983C14.399 3.61983 14.8809 4.10181 14.8809 4.69625ZM17.9368 5.78874C17.8685 4.34681 17.5392 3.06956 16.4831 2.01724C15.431 0.964911 14.154 0.635557 12.7124 0.56326C11.2267 0.478913 6.77334 0.478913 5.28756 0.56326C3.84997 0.631541 2.57301 0.960895 1.5169 2.01322C0.460792 3.06555 0.135527 4.3428 0.063246 5.78473C-0.021082 7.27084 -0.021082 11.7251 0.063246 13.2113C0.131511 14.6532 0.460792 15.9304 1.5169 16.9828C2.57301 18.0351 3.84596 18.3644 5.28756 18.4367C6.77334 18.5211 11.2267 18.5211 12.7124 18.4367C14.154 18.3685 15.431 18.0391 16.4831 16.9828C17.5352 15.9304 17.8645 14.6532 17.9368 13.2113C18.0211 11.7251 18.0211 7.27485 17.9368 5.78874ZM16.0173 14.8058C15.7041 15.593 15.0977 16.1995 14.3066 16.5168C13.122 16.9868 10.3111 16.8783 9.00201 16.8783C7.69292 16.8783 4.87797 16.9828 3.69738 16.5168C2.91032 16.2036 2.30396 15.5971 1.98673 14.8058C1.5169 13.6209 1.62532 10.8094 1.62532 9.5C1.62532 8.19062 1.52091 5.37504 1.98673 4.19419C2.29994 3.40695 2.9063 2.80046 3.69738 2.48315C4.88199 2.01322 7.69292 2.12167 9.00201 2.12167C10.3111 2.12167 13.126 2.01724 14.3066 2.48315C15.0937 2.79644 15.7001 3.40293 16.0173 4.19419C16.4871 5.37906 16.3787 8.19062 16.3787 9.5C16.3787 10.8094 16.4871 13.625 16.0173 14.8058Z"
+													fill="#111111"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="17"
+												class="social-media_icon" viewBox="0 0 18 17" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.0438858 0.076416L6.99348 9.36869L0 16.9237H1.57395L7.69674 10.3092L12.6438 16.9237H18L10.6594 7.10875L17.1689 0.076416H15.5949L9.95613 6.16826L5.40011 0.076416H0.0438858ZM2.3585 1.23579H4.81916L15.685 15.7641H13.2244L2.3585 1.23579Z"
+													fill="black"></path>
+											</svg></div>
+									</a></li>
+								<li><a href="" target="_blank"
+										class="social-link_item is-white w-inline-block">
+										<div class="embed_code w-embed"><svg width="18" height="15"
+												class="social-link_icon is-white" viewBox="0 0 18 15" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M6.61551 0.848972C6.61551 0.848972 4.12403 1.02017 2.49463 2.32858C2.48699 2.33163 2.47782 2.33622 2.47018 2.3408C2.1874 2.60218 1.97494 3.00724 1.71203 3.58807C1.44913 4.16891 1.17094 4.91635 0.917205 5.75245C0.411266 7.42618 9.56309e-05 9.48051 9.56309e-05 11.4141C-0.00143279 11.4829 0.015381 11.5501 0.0490082 11.6097C0.620673 12.614 1.67229 13.2208 2.6536 13.6029C3.63491 13.985 4.54132 14.1379 5.0014 14.1532C5.13133 14.1578 5.25514 14.0982 5.33156 13.9942L6.28536 12.6736C7.0542 12.8555 7.95602 12.9793 9 12.9793C10.044 12.9793 10.9458 12.8555 11.7146 12.6736L12.6684 13.9942C12.7449 14.0982 12.8687 14.1578 12.9986 14.1532C13.4587 14.1379 14.3651 13.985 15.3464 13.6029C16.3277 13.2208 17.3793 12.614 17.951 11.6097C17.9846 11.5501 18.0014 11.4829 17.9999 11.4141C17.9999 9.48051 17.5887 7.42618 17.0828 5.75245C16.8291 4.91635 16.5509 4.16891 16.288 3.58807C16.0251 3.00724 15.8126 2.60218 15.5298 2.3408C15.5222 2.33622 15.513 2.33163 15.5054 2.32858C13.876 1.02017 11.3845 0.848972 11.3845 0.848972C11.3554 0.845915 11.3279 0.845915 11.2989 0.848972C11.1629 0.867315 11.0482 0.955969 10.9932 1.08131C10.9932 1.08131 10.8602 1.37325 10.7731 1.79054C10.0103 1.66826 9.36837 1.63157 9 1.63157C8.63163 1.63157 7.98965 1.66826 7.22692 1.79054C7.1398 1.37325 7.00681 1.08131 7.00681 1.08131C6.93956 0.928455 6.78212 0.835216 6.61551 0.848972ZM6.37095 1.69271C6.39999 1.7722 6.41986 1.84709 6.44432 1.93728C5.56237 2.1421 4.59634 2.47684 3.69299 3.03781C3.55084 3.09742 3.4576 3.23499 3.45301 3.38937C3.44996 3.54222 3.53708 3.68437 3.67465 3.75163C3.81374 3.81735 3.97882 3.79748 4.09652 3.69813C5.90934 2.57467 8.21587 2.41417 9 2.41417C9.78413 2.41417 12.0907 2.57467 13.9035 3.69813C14.0212 3.79748 14.1863 3.81735 14.3254 3.75163C14.4629 3.68437 14.55 3.54222 14.547 3.38937C14.5424 3.23499 14.4492 3.09742 14.307 3.03781C13.4037 2.47684 12.4376 2.1421 11.5557 1.93728C11.5801 1.84709 11.6 1.7722 11.629 1.69271C12.0754 1.74774 13.8102 1.9816 14.9918 2.91553C15.0682 2.98584 15.3342 3.37714 15.5787 3.91823C15.8233 4.45933 16.0801 5.16397 16.3247 5.97256C16.8015 7.54999 17.1867 9.49579 17.2051 11.2796C16.7603 11.9995 15.9257 12.5345 15.0652 12.8692C14.2826 13.1734 13.5519 13.3094 13.1698 13.3461L12.5095 12.4535C12.8457 12.3449 13.1484 12.2272 13.4144 12.1111C14.4018 11.677 14.9306 11.2184 14.9306 11.2184C15.0927 11.0732 15.1064 10.8241 14.9612 10.662C14.816 10.5 14.5669 10.4863 14.4048 10.6315C14.4048 10.6315 13.9952 11.006 13.0964 11.4019C12.7663 11.5471 12.3658 11.6907 11.9103 11.8176C11.8048 11.8054 11.6994 11.8359 11.6168 11.9032C10.8877 12.0805 10.021 12.1967 9 12.1967C7.97131 12.1967 7.10311 12.0698 6.37095 11.891C6.28841 11.8359 6.18753 11.813 6.0897 11.8298C5.63268 11.703 5.23526 11.5471 4.90358 11.4019C4.00481 11.006 3.59517 10.6315 3.59517 10.6315C3.50651 10.5489 3.38423 10.5138 3.26501 10.5337C3.11368 10.5566 2.98835 10.6651 2.94708 10.8134C2.90428 10.9601 2.95319 11.1191 3.06936 11.2184C3.06936 11.2184 3.59822 11.677 4.58564 12.1111C4.85161 12.2272 5.15425 12.3449 5.49053 12.4535L4.83021 13.3461C4.44808 13.3094 3.71745 13.1734 2.93485 12.8692C2.07429 12.5345 1.23972 11.9995 0.794924 11.2796C0.813266 9.49579 1.19845 7.54999 1.67535 5.97256C1.91991 5.16397 2.1767 4.45933 2.42127 3.91823C2.66583 3.37714 2.93179 2.98584 3.00822 2.91553C4.18976 1.9816 5.92462 1.74774 6.37095 1.69271ZM6.45655 6.32718C5.45843 6.32718 4.6957 7.23359 4.6957 8.28368C4.6957 9.33377 5.45843 10.2402 6.45655 10.2402C7.45467 10.2402 8.2174 9.33377 8.2174 8.28368C8.2174 7.23359 7.45467 6.32718 6.45655 6.32718ZM11.5435 6.32718C10.5453 6.32718 9.7826 7.23359 9.7826 8.28368C9.7826 9.33377 10.5453 10.2402 11.5435 10.2402C12.5416 10.2402 13.3043 9.33377 13.3043 8.28368C13.3043 7.23359 12.5416 6.32718 11.5435 6.32718ZM6.45655 7.10978C6.97166 7.10978 7.4348 7.60502 7.4348 8.28368C7.4348 8.96234 6.97166 9.45758 6.45655 9.45758C5.94144 9.45758 5.4783 8.96234 5.4783 8.28368C5.4783 7.60502 5.94144 7.10978 6.45655 7.10978ZM11.5435 7.10978C12.0586 7.10978 12.5217 7.60502 12.5217 8.28368C12.5217 8.96234 12.0586 9.45758 11.5435 9.45758C11.0283 9.45758 10.5652 8.96234 10.5652 8.28368C10.5652 7.60502 11.0283 7.10978 11.5435 7.10978Z"
+													fill="black"></path>
+											</svg></div>
+									</a></li>
+							</ul>
+						</div>
+						<div id="w-node-ccc2125d-5cff-ff5f-816b-c27a470594ac-bd3dca0a"
+							class="w-embed-youtubevideo about_video"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="subscribe_section">
+			<div class="container">
+				<div data-w-id="2e895233-b956-076a-3cdd-2c0603337ffc" class="subscribe_wrapper">
+					<div class="subscribe_text-block">
+						<h2 class="heading-style-h2 is-capital-case">Start trading</h2>
+						<p class="regular-text is-faded">Join now with Swift to get the latest news and start trading.
+						</p>
+					</div>
+					<div id="w-node-e20f6d8c-bce3-2dde-bd79-8b7fedd58bfb-bd3dca0a"
+						class="subscribe-form_wrapper w-form">
+						<form id="wf-form-Subscribe-form" name="wf-form-Subscribe-form" data-name="Subscribe form"
+							method="get" class="subscribe_form" data-wf-page-id="64fb18e1a80ba54bbd3dca0a"
+							data-wf-element-id="e20f6d8c-bce3-2dde-bd79-8b7fedd58bfc" aria-label="Subscribe form"><input
+								type="text" class="form_input w-input" maxlength="256" name="Telegram-Handle"
+								data-name="Telegram Handle" placeholder="Enter your telegram handle"
+								id="Telegram-Handle" required="" value=""><input type="submit" value="Subscribe"
+								data-wait="Processing" class="btn fill-small w-button"></form>
+						<div class="subscribe-form_succes-state w-form-done" tabindex="-1" role="region"
+							aria-label="Subscribe form success">
+							<div class="subscribe-form_succes-text">Thank you! Your submission has been received!</div>
+						</div>
+						<div class="subscribe-form_error-state w-form-fail" tabindex="-1" role="region"
+							aria-label="Subscribe form failure">
+							<div class="subscribe-form_error-text">Oops! Something went wrong while submitting the form.
+								Please try again in a moment.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq_section">
+			<div class="container">
+				<div data-w-id="e05d8376-e965-a88c-108f-e212568416c2" class="faq_wrapper">
+					<h2 class="heading-style-h2">faq</h2>
+					<ul role="list" class="faq_list w-list-unstyled">
+						<li class="faq_list-item">
+							<div class="faq_item-header is-active">
+								<h3 class="heading-style-h4 faq_item-question">What is the token address?</h3>
+								<div class="faq_item-icon">
+									<div class="embed_code w-embed"><svg width="20" height="20"
+											class="faq_item-icon-svg" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M9.99984 3.33325C10.4601 3.33325 10.8332 3.70635 10.8332 4.16659V15.8333C10.8332 16.2935 10.4601 16.6666 9.99984 16.6666C9.5396 16.6666 9.1665 16.2935 9.1665 15.8333V4.16659C9.1665 3.70635 9.5396 3.33325 9.99984 3.33325Z"
+												fill="#111111"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.3335 10.0001C3.3335 9.53984 3.70659 9.16675 4.16683 9.16675H15.8335C16.2937 9.16675 16.6668 9.53984 16.6668 10.0001C16.6668 10.4603 16.2937 10.8334 15.8335 10.8334H4.16683C3.70659 10.8334 3.3335 10.4603 3.3335 10.0001Z"
+												fill="#111111"></path>
+										</svg></div>
+								</div>
+							</div>
+							<div class="faq_item-content">
+								<p class="regular-text is-faded">0xacC48f65F8701f376bC4Ba13f4BC103F31dDa74E</p>
+							</div>
+						</li>
+						<li class="faq_list-item">
+							<div class="faq_item-header">
+								<h3 class="heading-style-h4 faq_item-question">How do I become an Affiliate?</h3>
+								<div class="faq_item-icon">
+									<div class="embed_code w-embed"><svg width="20" height="20"
+											class="faq_item-icon-svg" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M9.99984 3.33325C10.4601 3.33325 10.8332 3.70635 10.8332 4.16659V15.8333C10.8332 16.2935 10.4601 16.6666 9.99984 16.6666C9.5396 16.6666 9.1665 16.2935 9.1665 15.8333V4.16659C9.1665 3.70635 9.5396 3.33325 9.99984 3.33325Z"
+												fill="#111111"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.3335 10.0001C3.3335 9.53984 3.70659 9.16675 4.16683 9.16675H15.8335C16.2937 9.16675 16.6668 9.53984 16.6668 10.0001C16.6668 10.4603 16.2937 10.8334 15.8335 10.8334H4.16683C3.70659 10.8334 3.3335 10.4603 3.3335 10.0001Z"
+												fill="#111111"></path>
+										</svg></div>
+								</div>
+							</div>
+							<div class="faq_item-content">
+								<p class="regular-text is-faded">Users can become an Affiliate by doing /start -&gt;
+									Affiliate and providing their Twitter and Payout wallet.</p>
+							</div>
+						</li>
+						<li class="faq_list-item">
+							<div class="faq_item-header">
+								<h3 class="heading-style-h4 faq_item-question">What security measures has the team
+									taken?</h3>
+								<div class="faq_item-icon">
+									<div class="embed_code w-embed"><svg width="20" height="20"
+											class="faq_item-icon-svg" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M9.99984 3.33325C10.4601 3.33325 10.8332 3.70635 10.8332 4.16659V15.8333C10.8332 16.2935 10.4601 16.6666 9.99984 16.6666C9.5396 16.6666 9.1665 16.2935 9.1665 15.8333V4.16659C9.1665 3.70635 9.5396 3.33325 9.99984 3.33325Z"
+												fill="#111111"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.3335 10.0001C3.3335 9.53984 3.70659 9.16675 4.16683 9.16675H15.8335C16.2937 9.16675 16.6668 9.53984 16.6668 10.0001C16.6668 10.4603 16.2937 10.8334 15.8335 10.8334H4.16683C3.70659 10.8334 3.3335 10.4603 3.3335 10.0001Z"
+												fill="#111111"></path>
+										</svg></div>
+								</div>
+							</div>
+							<div class="faq_item-content">
+								<p class="regular-text is-faded">All private keys are AES encrypted, and our servers'
+									security are held up by AWS, the world's most secure server service.</p>
+							</div>
+						</li>
+						<li class="faq_list-item">
+							<div class="faq_item-header">
+								<h3 class="heading-style-h4 faq_item-question">How can I buy a token manually?</h3>
+								<div class="faq_item-icon">
+									<div class="embed_code w-embed"><svg width="20" height="20"
+											class="faq_item-icon-svg" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M9.99984 3.33325C10.4601 3.33325 10.8332 3.70635 10.8332 4.16659V15.8333C10.8332 16.2935 10.4601 16.6666 9.99984 16.6666C9.5396 16.6666 9.1665 16.2935 9.1665 15.8333V4.16659C9.1665 3.70635 9.5396 3.33325 9.99984 3.33325Z"
+												fill="#111111"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.3335 10.0001C3.3335 9.53984 3.70659 9.16675 4.16683 9.16675H15.8335C16.2937 9.16675 16.6668 9.53984 16.6668 10.0001C16.6668 10.4603 16.2937 10.8334 15.8335 10.8334H4.16683C3.70659 10.8334 3.3335 10.4603 3.3335 10.0001Z"
+												fill="#111111"></path>
+										</svg></div>
+								</div>
+							</div>
+							<div class="faq_item-content">
+								<p class="regular-text is-faded">You paste the token's contract address into the bot,
+									then use the buy menu to pick a suitable amount.</p>
+							</div>
+						</li>
+						<li class="faq_list-item">
+							<div class="faq_item-header">
+								<h3 class="heading-style-h4 faq_item-question">Can I use the same wallet on multiple
+									chains?</h3>
+								<div class="faq_item-icon">
+									<div class="embed_code w-embed"><svg width="20" height="20"
+											class="faq_item-icon-svg" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M9.99984 3.33325C10.4601 3.33325 10.8332 3.70635 10.8332 4.16659V15.8333C10.8332 16.2935 10.4601 16.6666 9.99984 16.6666C9.5396 16.6666 9.1665 16.2935 9.1665 15.8333V4.16659C9.1665 3.70635 9.5396 3.33325 9.99984 3.33325Z"
+												fill="#111111"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.3335 10.0001C3.3335 9.53984 3.70659 9.16675 4.16683 9.16675H15.8335C16.2937 9.16675 16.6668 9.53984 16.6668 10.0001C16.6668 10.4603 16.2937 10.8334 15.8335 10.8334H4.16683C3.70659 10.8334 3.3335 10.4603 3.3335 10.0001Z"
+												fill="#111111"></path>
+										</svg></div>
+								</div>
+							</div>
+							<div class="faq_item-content">
+								<p class="regular-text is-faded">Yes. To connect the same wallet on different chains,
+									you can either use the private key or mnemonic phrase, or just use the /import
+									command:<br><br>Use /import if you want to use the same wallet across multiple
+									chains (or if you sent money to the wrong chain and want to get it back). You can
+									import an existing connected wallet across multiple chains using this command.
+									(Origin chain, name of the origin wallet, destination chain, and destination wallet
+									name) You would enter the command: /import BSC main ETH Wallet1 if you wanted to
+									import your primary BSC wallet and give it the name "Wallet1".</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="w-embed">
+				<style>
+					.faq_item-header>* {
+						pointer-events: none
+					}
+
+					.faq_item-header svg path:first-child {
+						transform: rotateZ(0deg);
+						transform-origin: center;
+						transition: all 0.25s ease;
+					}
+
+					.faq_item-header.is-active+.faq_item-content {
+						display: block;
+					}
+
+					.faq_item-header.is-active svg path:first-child {
+						transform: rotateZ(-90deg);
+						transform-origin: center;
+					}
+				</style>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container footer_container">
+				<div class="footer_wrapper">
+					<div class="footer_block is-main-block"><img src="64fb18e1a80ba54bbd3dca29_swift-logo-text.svg"
+							loading="lazy" alt="Swift" class="footer_logo">
+						<h3 class="heading-style-h4">Every trader's dream.</h3>
+						<ul role="list" class="social-links_list footer-social-list w-list-unstyled">
+							<li><a href="https://t.me/SwiftPortalOfficial" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+											class="social-media_icon" width="18" height="17" viewBox="0 0 18 17"
+											fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M13.0989 14.9927C13.3283 15.1551 13.624 15.1957 13.8876 15.096C14.1512 14.9955 14.345 14.7704 14.4035 14.4975C15.0226 11.5876 16.5246 4.22252 17.0882 1.57558C17.1309 1.37608 17.0597 1.16874 16.9029 1.03551C16.7462 0.902268 16.5289 0.863792 16.3351 0.935755C13.3475 2.04155 4.14703 5.49362 0.386458 6.88513C0.147771 6.97348 -0.00755403 7.2029 0.000283471 7.45442C0.00883347 7.70664 0.178408 7.92538 0.422796 7.99877C2.10928 8.50322 4.32302 9.20503 4.32302 9.20503C4.32302 9.20503 5.35757 12.3293 5.89693 13.9182C5.96462 14.1177 6.12066 14.2745 6.32657 14.3286C6.53177 14.3821 6.75122 14.3258 6.90441 14.1811C7.77081 13.3632 9.11031 12.0985 9.11031 12.0985C9.11031 12.0985 11.6554 13.9645 13.0989 14.9927ZM5.25426 8.8103L6.45055 12.7561L6.71631 10.2574C6.71631 10.2574 11.3383 6.08855 13.9731 3.71237C14.0501 3.64254 14.0608 3.52569 13.9966 3.44376C13.9332 3.36182 13.8164 3.34258 13.7287 3.39816C10.675 5.34827 5.25426 8.8103 5.25426 8.8103Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="https://www.instagram.com/swift.eco/" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="19"
+											class="social-media_icon" viewBox="0 0 18 19" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.00201 4.88503C6.44808 4.88503 4.38806 6.9455 4.38806 9.5C4.38806 12.0545 6.44808 14.115 9.00201 14.115C11.5559 14.115 13.616 12.0545 13.616 9.5C13.616 6.9455 11.5559 4.88503 9.00201 4.88503ZM9.00201 12.5003C7.35159 12.5003 6.00234 11.1548 6.00234 9.5C6.00234 7.8452 7.34757 6.49967 9.00201 6.49967C10.6564 6.49967 12.0017 7.8452 12.0017 9.5C12.0017 11.1548 10.6524 12.5003 9.00201 12.5003ZM14.8809 4.69625C14.8809 5.29471 14.399 5.77268 13.8047 5.77268C13.2064 5.77268 12.7285 5.29069 12.7285 4.69625C12.7285 4.10181 13.2104 3.61983 13.8047 3.61983C14.399 3.61983 14.8809 4.10181 14.8809 4.69625ZM17.9368 5.78874C17.8685 4.34681 17.5392 3.06956 16.4831 2.01724C15.431 0.964911 14.154 0.635557 12.7124 0.56326C11.2267 0.478913 6.77334 0.478913 5.28756 0.56326C3.84997 0.631541 2.57301 0.960895 1.5169 2.01322C0.460792 3.06555 0.135527 4.3428 0.063246 5.78473C-0.021082 7.27084 -0.021082 11.7251 0.063246 13.2113C0.131511 14.6532 0.460792 15.9304 1.5169 16.9828C2.57301 18.0351 3.84596 18.3644 5.28756 18.4367C6.77334 18.5211 11.2267 18.5211 12.7124 18.4367C14.154 18.3685 15.431 18.0391 16.4831 16.9828C17.5352 15.9304 17.8645 14.6532 17.9368 13.2113C18.0211 11.7251 18.0211 7.27485 17.9368 5.78874ZM16.0173 14.8058C15.7041 15.593 15.0977 16.1995 14.3066 16.5168C13.122 16.9868 10.3111 16.8783 9.00201 16.8783C7.69292 16.8783 4.87797 16.9828 3.69738 16.5168C2.91032 16.2036 2.30396 15.5971 1.98673 14.8058C1.5169 13.6209 1.62532 10.8094 1.62532 9.5C1.62532 8.19062 1.52091 5.37504 1.98673 4.19419C2.29994 3.40695 2.9063 2.80046 3.69738 2.48315C4.88199 2.01322 7.69292 2.12167 9.00201 2.12167C10.3111 2.12167 13.126 2.01724 14.3066 2.48315C15.0937 2.79644 15.7001 3.40293 16.0173 4.19419C16.4871 5.37906 16.3787 8.19062 16.3787 9.5C16.3787 10.8094 16.4871 13.625 16.0173 14.8058Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="https://twitter.com/SwiftEcosystem" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="17"
+											class="social-media_icon" viewBox="0 0 18 17" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.0438858 0.076416L6.99348 9.36869L0 16.9237H1.57395L7.69674 10.3092L12.6438 16.9237H18L10.6594 7.10875L17.1689 0.076416H15.5949L9.95613 6.16826L5.40011 0.076416H0.0438858ZM2.3585 1.23579H4.81916L15.685 15.7641H13.2244L2.3585 1.23579Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="https://www.youtube.com/@SwiftEcosystem" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="13"
+											class="socila-media_icon" viewBox="0 0 18 13" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M17.6239 2.15215C17.4169 1.37267 16.8069 0.758775 16.0325 0.550441C14.6288 0.171875 9 0.171875 9 0.171875C9 0.171875 3.37127 0.171875 1.96752 0.550441C1.19308 0.758808 0.583143 1.37267 0.376127 2.15215C0 3.565 0 6.51278 0 6.51278C0 6.51278 0 9.46056 0.376127 10.8734C0.583143 11.6529 1.19308 12.2412 1.96752 12.4495C3.37127 12.8281 9 12.8281 9 12.8281C9 12.8281 14.6287 12.8281 16.0325 12.4495C16.8069 12.2412 17.4169 11.6529 17.6239 10.8734C18 9.46056 18 6.51278 18 6.51278C18 6.51278 18 3.565 17.6239 2.15215ZM7.15908 9.18915V3.83642L11.8636 6.51285L7.15908 9.18915Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="https://medium.com/@Swiftadmin" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="11"
+											class="social-media_icon" viewBox="0 0 18 11" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M5.24703 1.00221C2.78392 1.00221 0.782608 3.01273 0.782608 5.49994C0.782608 7.98719 2.78378 9.99782 5.24703 9.99782C7.71023 9.99782 9.71164 7.9865 9.71164 5.49994C9.71164 3.01338 7.7101 1.00221 5.24703 1.00221ZM0 5.49994C0 2.58549 2.34674 0.219604 5.24703 0.219604C7.6519 0.219604 9.67632 1.84673 10.2978 4.06377C10.4222 3.30809 10.6431 2.62423 10.9391 2.06326C11.4042 1.18145 12.1144 0.506344 13.002 0.506344C13.8895 0.506344 14.5997 1.18146 15.0648 2.06326C15.2938 2.4974 15.4779 3.00514 15.6071 3.56282C15.649 3.17328 15.7032 2.81683 15.7678 2.50507C15.8478 2.11859 15.9479 1.77999 16.071 1.52853C16.1322 1.4036 16.2088 1.27971 16.3077 1.18194C16.4078 1.08298 16.5586 0.985167 16.7549 0.985167C16.9511 0.985167 17.1019 1.08292 17.202 1.18189C17.301 1.27966 17.3776 1.40354 17.4387 1.52846C17.5618 1.7799 17.6619 2.11846 17.7419 2.50491C17.9032 3.28425 18 4.34296 18 5.49994C18 6.65701 17.9031 7.71573 17.7417 8.49506C17.6617 8.8815 17.5616 9.22004 17.4385 9.47146C17.3774 9.59637 17.3008 9.72024 17.2018 9.81799C17.1017 9.91694 16.9509 10.0147 16.7547 10.0147C16.5584 10.0147 16.4077 9.91687 16.3076 9.81791C16.2086 9.72014 16.1321 9.59625 16.0709 9.47132C15.9478 9.21987 15.8478 8.88129 15.7678 8.49481C15.7032 8.18311 15.649 7.82673 15.6072 7.43727C15.4779 7.995 15.2938 8.50275 15.0648 8.93688C14.5996 9.81865 13.8895 10.4935 13.002 10.4935C12.1144 10.4935 11.4042 9.81841 10.9391 8.9366C10.6431 8.37564 10.4222 7.69179 10.2978 6.93613C9.67636 9.15318 7.65204 10.7804 5.24703 10.7804C2.34655 10.7804 0 8.41439 0 5.49994ZM11.6313 2.42841C11.2271 3.19456 10.9653 4.27993 10.9653 5.49994C10.9653 6.71993 11.2271 7.8053 11.6313 8.57145C12.0449 9.35548 12.5487 9.71091 13.002 9.71091C13.4553 9.71091 13.9591 9.3556 14.3726 8.57171C14.7768 7.80566 15.0385 6.7203 15.0385 5.49994C15.0385 4.27993 14.7768 3.19456 14.3726 2.4284C13.959 1.64437 13.4552 1.28895 13.002 1.28895C12.5487 1.28895 12.0449 1.64438 11.6313 2.42841ZM16.5341 2.66378C16.3864 3.37693 16.2921 4.37995 16.2921 5.49994C16.2921 6.61993 16.3864 7.62296 16.5341 8.33612C16.6028 8.66783 16.6795 8.91929 16.7548 9.08658C16.83 8.91935 16.9067 8.66797 16.9754 8.33634C17.1231 7.62327 17.2174 6.62025 17.2174 5.49994C17.2174 4.37968 17.1231 3.37665 16.9755 2.66357C16.9068 2.33183 16.8301 2.08039 16.7549 1.91317C16.6796 2.08044 16.6029 2.33196 16.5341 2.66378Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+							<li><a href="https://discord.com/invite/swift-ecosystem" target="_blank"
+									class="social-link_item is-white w-inline-block">
+									<div class="embed_code w-embed"><svg width="18" height="15"
+											class="social-link_icon is-white" viewBox="0 0 18 15" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.61551 0.848972C6.61551 0.848972 4.12403 1.02017 2.49463 2.32858C2.48699 2.33163 2.47782 2.33622 2.47018 2.3408C2.1874 2.60218 1.97494 3.00724 1.71203 3.58807C1.44913 4.16891 1.17094 4.91635 0.917205 5.75245C0.411266 7.42618 9.56309e-05 9.48051 9.56309e-05 11.4141C-0.00143279 11.4829 0.015381 11.5501 0.0490082 11.6097C0.620673 12.614 1.67229 13.2208 2.6536 13.6029C3.63491 13.985 4.54132 14.1379 5.0014 14.1532C5.13133 14.1578 5.25514 14.0982 5.33156 13.9942L6.28536 12.6736C7.0542 12.8555 7.95602 12.9793 9 12.9793C10.044 12.9793 10.9458 12.8555 11.7146 12.6736L12.6684 13.9942C12.7449 14.0982 12.8687 14.1578 12.9986 14.1532C13.4587 14.1379 14.3651 13.985 15.3464 13.6029C16.3277 13.2208 17.3793 12.614 17.951 11.6097C17.9846 11.5501 18.0014 11.4829 17.9999 11.4141C17.9999 9.48051 17.5887 7.42618 17.0828 5.75245C16.8291 4.91635 16.5509 4.16891 16.288 3.58807C16.0251 3.00724 15.8126 2.60218 15.5298 2.3408C15.5222 2.33622 15.513 2.33163 15.5054 2.32858C13.876 1.02017 11.3845 0.848972 11.3845 0.848972C11.3554 0.845915 11.3279 0.845915 11.2989 0.848972C11.1629 0.867315 11.0482 0.955969 10.9932 1.08131C10.9932 1.08131 10.8602 1.37325 10.7731 1.79054C10.0103 1.66826 9.36837 1.63157 9 1.63157C8.63163 1.63157 7.98965 1.66826 7.22692 1.79054C7.1398 1.37325 7.00681 1.08131 7.00681 1.08131C6.93956 0.928455 6.78212 0.835216 6.61551 0.848972ZM6.37095 1.69271C6.39999 1.7722 6.41986 1.84709 6.44432 1.93728C5.56237 2.1421 4.59634 2.47684 3.69299 3.03781C3.55084 3.09742 3.4576 3.23499 3.45301 3.38937C3.44996 3.54222 3.53708 3.68437 3.67465 3.75163C3.81374 3.81735 3.97882 3.79748 4.09652 3.69813C5.90934 2.57467 8.21587 2.41417 9 2.41417C9.78413 2.41417 12.0907 2.57467 13.9035 3.69813C14.0212 3.79748 14.1863 3.81735 14.3254 3.75163C14.4629 3.68437 14.55 3.54222 14.547 3.38937C14.5424 3.23499 14.4492 3.09742 14.307 3.03781C13.4037 2.47684 12.4376 2.1421 11.5557 1.93728C11.5801 1.84709 11.6 1.7722 11.629 1.69271C12.0754 1.74774 13.8102 1.9816 14.9918 2.91553C15.0682 2.98584 15.3342 3.37714 15.5787 3.91823C15.8233 4.45933 16.0801 5.16397 16.3247 5.97256C16.8015 7.54999 17.1867 9.49579 17.2051 11.2796C16.7603 11.9995 15.9257 12.5345 15.0652 12.8692C14.2826 13.1734 13.5519 13.3094 13.1698 13.3461L12.5095 12.4535C12.8457 12.3449 13.1484 12.2272 13.4144 12.1111C14.4018 11.677 14.9306 11.2184 14.9306 11.2184C15.0927 11.0732 15.1064 10.8241 14.9612 10.662C14.816 10.5 14.5669 10.4863 14.4048 10.6315C14.4048 10.6315 13.9952 11.006 13.0964 11.4019C12.7663 11.5471 12.3658 11.6907 11.9103 11.8176C11.8048 11.8054 11.6994 11.8359 11.6168 11.9032C10.8877 12.0805 10.021 12.1967 9 12.1967C7.97131 12.1967 7.10311 12.0698 6.37095 11.891C6.28841 11.8359 6.18753 11.813 6.0897 11.8298C5.63268 11.703 5.23526 11.5471 4.90358 11.4019C4.00481 11.006 3.59517 10.6315 3.59517 10.6315C3.50651 10.5489 3.38423 10.5138 3.26501 10.5337C3.11368 10.5566 2.98835 10.6651 2.94708 10.8134C2.90428 10.9601 2.95319 11.1191 3.06936 11.2184C3.06936 11.2184 3.59822 11.677 4.58564 12.1111C4.85161 12.2272 5.15425 12.3449 5.49053 12.4535L4.83021 13.3461C4.44808 13.3094 3.71745 13.1734 2.93485 12.8692C2.07429 12.5345 1.23972 11.9995 0.794924 11.2796C0.813266 9.49579 1.19845 7.54999 1.67535 5.97256C1.91991 5.16397 2.1767 4.45933 2.42127 3.91823C2.66583 3.37714 2.93179 2.98584 3.00822 2.91553C4.18976 1.9816 5.92462 1.74774 6.37095 1.69271ZM6.45655 6.32718C5.45843 6.32718 4.6957 7.23359 4.6957 8.28368C4.6957 9.33377 5.45843 10.2402 6.45655 10.2402C7.45467 10.2402 8.2174 9.33377 8.2174 8.28368C8.2174 7.23359 7.45467 6.32718 6.45655 6.32718ZM11.5435 6.32718C10.5453 6.32718 9.7826 7.23359 9.7826 8.28368C9.7826 9.33377 10.5453 10.2402 11.5435 10.2402C12.5416 10.2402 13.3043 9.33377 13.3043 8.28368C13.3043 7.23359 12.5416 6.32718 11.5435 6.32718ZM6.45655 7.10978C6.97166 7.10978 7.4348 7.60502 7.4348 8.28368C7.4348 8.96234 6.97166 9.45758 6.45655 9.45758C5.94144 9.45758 5.4783 8.96234 5.4783 8.28368C5.4783 7.60502 5.94144 7.10978 6.45655 7.10978ZM11.5435 7.10978C12.0586 7.10978 12.5217 7.60502 12.5217 8.28368C12.5217 8.96234 12.0586 9.45758 11.5435 9.45758C11.0283 9.45758 10.5652 8.96234 10.5652 8.28368C10.5652 7.60502 11.0283 7.10978 11.5435 7.10978Z"
+												fill="black"></path>
+										</svg></div>
+								</a></li>
+						</ul>
+					</div>
+					<div id="w-node-_4e930ef0-27a1-3f06-9cbf-08e7d394f77c-d394f762" class="footer_block-separator">
+						<div id="w-node-_4e930ef0-27a1-3f06-9cbf-08e7d394f77d-d394f762" class="footer_block">
+							<h4 class="heading-style-h4">Web-App</h4>
+							<ul role="list" class="footer_list w-list-unstyled">
+								<li class="footer_list-item"><a href="#" class="footer_link">Application Home</a></li>
+								<li class="footer_list-item"><a href="#" class="footer_link">Application Trading</a>
+								</li>
+								<li class="footer_list-item"><a href="#" class="footer_link">Account Management</a></li>
+								<li class="footer_list-item"><a
+										href="https://docs.swiftbot.io/swift-faq/swift-faq/affiliate"
+										class="footer_link">Affiliate Setup</a></li>
+							</ul>
+						</div>
+						<div id="w-node-_4e930ef0-27a1-3f06-9cbf-08e7d394f78d-d394f762" class="footer_block">
+							<h4 class="heading-style-h4">Support</h4>
+							<ul role="list" class="footer_list w-list-unstyled">
+								<li class="footer_list-item"><a href="#" class="footer_link">Support</a></li>
+								<li class="footer_list-item"><a href="https://docs.swiftbot.io/swift-faq/swift-faq"
+										target="_blank" class="footer_link">FAQ</a></li>
+							</ul>
+						</div>
+						<div id="w-node-_4e930ef0-27a1-3f06-9cbf-08e7d394f797-d394f762" class="footer_block">
+							<h4 class="heading-style-h4">Resources</h4>
+							<ul role="list" class="footer_list w-list-unstyled">
+								<li class="footer_list-item"><a href="#" class="footer_link">Download</a></li>
+								<li class="footer_list-item"><a href="#" class="footer_link">Desktop Application</a>
+								</li>
+								<li class="footer_list-item"><a href="#" class="footer_link">Market with us</a></li>
+							</ul>
+						</div>
+						<div id="w-node-_4e930ef0-27a1-3f06-9cbf-08e7d394f7a4-d394f762" class="footer_block">
+							<h4 class="heading-style-h4">Learn</h4>
+							<ul role="list" class="footer_list w-list-unstyled">
+								<li class="footer_list-item"><a href="https://docs.swiftbot.io/" target="_blank"
+										class="footer_link">Gitbook</a></li>
+								<li class="footer_list-item"><a href="https://t.me/SwiftEco_Hub" target="_blank"
+										class="footer_link">Telegram - News</a></li>
+								<li class="footer_list-item"><a href="https://medium.com/@Swiftadmin" target="_blank"
+										class="footer_link">Medium</a></li>
+							</ul>
+						</div>
+					</div>
+					<ul role="list" class="social-links_list footer-social-list is-tablet w-list-unstyled">
+						<li><a href="https://t.me/SwiftPortalOfficial" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+										class="social-media_icon" width="18" height="17" viewBox="0 0 18 17"
+										fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M13.0989 14.9927C13.3283 15.1551 13.624 15.1957 13.8876 15.096C14.1512 14.9955 14.345 14.7704 14.4035 14.4975C15.0226 11.5876 16.5246 4.22252 17.0882 1.57558C17.1309 1.37608 17.0597 1.16874 16.9029 1.03551C16.7462 0.902268 16.5289 0.863792 16.3351 0.935755C13.3475 2.04155 4.14703 5.49362 0.386458 6.88513C0.147771 6.97348 -0.00755403 7.2029 0.000283471 7.45442C0.00883347 7.70664 0.178408 7.92538 0.422796 7.99877C2.10928 8.50322 4.32302 9.20503 4.32302 9.20503C4.32302 9.20503 5.35757 12.3293 5.89693 13.9182C5.96462 14.1177 6.12066 14.2745 6.32657 14.3286C6.53177 14.3821 6.75122 14.3258 6.90441 14.1811C7.77081 13.3632 9.11031 12.0985 9.11031 12.0985C9.11031 12.0985 11.6554 13.9645 13.0989 14.9927ZM5.25426 8.8103L6.45055 12.7561L6.71631 10.2574C6.71631 10.2574 11.3383 6.08855 13.9731 3.71237C14.0501 3.64254 14.0608 3.52569 13.9966 3.44376C13.9332 3.36182 13.8164 3.34258 13.7287 3.39816C10.675 5.34827 5.25426 8.8103 5.25426 8.8103Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+						<li><a href="https://www.instagram.com/swift.eco/" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg width="18" height="19" class="social-media_icon"
+										viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M9.00201 4.88503C6.44808 4.88503 4.38806 6.9455 4.38806 9.5C4.38806 12.0545 6.44808 14.115 9.00201 14.115C11.5559 14.115 13.616 12.0545 13.616 9.5C13.616 6.9455 11.5559 4.88503 9.00201 4.88503ZM9.00201 12.5003C7.35159 12.5003 6.00234 11.1548 6.00234 9.5C6.00234 7.8452 7.34757 6.49967 9.00201 6.49967C10.6564 6.49967 12.0017 7.8452 12.0017 9.5C12.0017 11.1548 10.6524 12.5003 9.00201 12.5003ZM14.8809 4.69625C14.8809 5.29471 14.399 5.77268 13.8047 5.77268C13.2064 5.77268 12.7285 5.29069 12.7285 4.69625C12.7285 4.10181 13.2104 3.61983 13.8047 3.61983C14.399 3.61983 14.8809 4.10181 14.8809 4.69625ZM17.9368 5.78874C17.8685 4.34681 17.5392 3.06956 16.4831 2.01724C15.431 0.964911 14.154 0.635557 12.7124 0.56326C11.2267 0.478913 6.77334 0.478913 5.28756 0.56326C3.84997 0.631541 2.57301 0.960895 1.5169 2.01322C0.460792 3.06555 0.135527 4.3428 0.063246 5.78473C-0.021082 7.27084 -0.021082 11.7251 0.063246 13.2113C0.131511 14.6532 0.460792 15.9304 1.5169 16.9828C2.57301 18.0351 3.84596 18.3644 5.28756 18.4367C6.77334 18.5211 11.2267 18.5211 12.7124 18.4367C14.154 18.3685 15.431 18.0391 16.4831 16.9828C17.5352 15.9304 17.8645 14.6532 17.9368 13.2113C18.0211 11.7251 18.0211 7.27485 17.9368 5.78874ZM16.0173 14.8058C15.7041 15.593 15.0977 16.1995 14.3066 16.5168C13.122 16.9868 10.3111 16.8783 9.00201 16.8783C7.69292 16.8783 4.87797 16.9828 3.69738 16.5168C2.91032 16.2036 2.30396 15.5971 1.98673 14.8058C1.5169 13.6209 1.62532 10.8094 1.62532 9.5C1.62532 8.19062 1.52091 5.37504 1.98673 4.19419C2.29994 3.40695 2.9063 2.80046 3.69738 2.48315C4.88199 2.01322 7.69292 2.12167 9.00201 2.12167C10.3111 2.12167 13.126 2.01724 14.3066 2.48315C15.0937 2.79644 15.7001 3.40293 16.0173 4.19419C16.4871 5.37906 16.3787 8.19062 16.3787 9.5C16.3787 10.8094 16.4871 13.625 16.0173 14.8058Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+						<li><a href="https://twitter.com/SwiftEcosystem" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg width="18" height="17" class="social-media_icon"
+										viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.0438858 0.076416L6.99348 9.36869L0 16.9237H1.57395L7.69674 10.3092L12.6438 16.9237H18L10.6594 7.10875L17.1689 0.076416H15.5949L9.95613 6.16826L5.40011 0.076416H0.0438858ZM2.3585 1.23579H4.81916L15.685 15.7641H13.2244L2.3585 1.23579Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+						<li><a href="https://www.youtube.com/@SwiftEcosystem" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg width="18" height="13" class="socila-media_icon"
+										viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M17.6239 2.15215C17.4169 1.37267 16.8069 0.758775 16.0325 0.550441C14.6288 0.171875 9 0.171875 9 0.171875C9 0.171875 3.37127 0.171875 1.96752 0.550441C1.19308 0.758808 0.583143 1.37267 0.376127 2.15215C0 3.565 0 6.51278 0 6.51278C0 6.51278 0 9.46056 0.376127 10.8734C0.583143 11.6529 1.19308 12.2412 1.96752 12.4495C3.37127 12.8281 9 12.8281 9 12.8281C9 12.8281 14.6287 12.8281 16.0325 12.4495C16.8069 12.2412 17.4169 11.6529 17.6239 10.8734C18 9.46056 18 6.51278 18 6.51278C18 6.51278 18 3.565 17.6239 2.15215ZM7.15908 9.18915V3.83642L11.8636 6.51285L7.15908 9.18915Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+						<li><a href="https://medium.com/@Swiftadmin" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg width="18" height="11" class="social-media_icon"
+										viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M5.24703 1.00221C2.78392 1.00221 0.782608 3.01273 0.782608 5.49994C0.782608 7.98719 2.78378 9.99782 5.24703 9.99782C7.71023 9.99782 9.71164 7.9865 9.71164 5.49994C9.71164 3.01338 7.7101 1.00221 5.24703 1.00221ZM0 5.49994C0 2.58549 2.34674 0.219604 5.24703 0.219604C7.6519 0.219604 9.67632 1.84673 10.2978 4.06377C10.4222 3.30809 10.6431 2.62423 10.9391 2.06326C11.4042 1.18145 12.1144 0.506344 13.002 0.506344C13.8895 0.506344 14.5997 1.18146 15.0648 2.06326C15.2938 2.4974 15.4779 3.00514 15.6071 3.56282C15.649 3.17328 15.7032 2.81683 15.7678 2.50507C15.8478 2.11859 15.9479 1.77999 16.071 1.52853C16.1322 1.4036 16.2088 1.27971 16.3077 1.18194C16.4078 1.08298 16.5586 0.985167 16.7549 0.985167C16.9511 0.985167 17.1019 1.08292 17.202 1.18189C17.301 1.27966 17.3776 1.40354 17.4387 1.52846C17.5618 1.7799 17.6619 2.11846 17.7419 2.50491C17.9032 3.28425 18 4.34296 18 5.49994C18 6.65701 17.9031 7.71573 17.7417 8.49506C17.6617 8.8815 17.5616 9.22004 17.4385 9.47146C17.3774 9.59637 17.3008 9.72024 17.2018 9.81799C17.1017 9.91694 16.9509 10.0147 16.7547 10.0147C16.5584 10.0147 16.4077 9.91687 16.3076 9.81791C16.2086 9.72014 16.1321 9.59625 16.0709 9.47132C15.9478 9.21987 15.8478 8.88129 15.7678 8.49481C15.7032 8.18311 15.649 7.82673 15.6072 7.43727C15.4779 7.995 15.2938 8.50275 15.0648 8.93688C14.5996 9.81865 13.8895 10.4935 13.002 10.4935C12.1144 10.4935 11.4042 9.81841 10.9391 8.9366C10.6431 8.37564 10.4222 7.69179 10.2978 6.93613C9.67636 9.15318 7.65204 10.7804 5.24703 10.7804C2.34655 10.7804 0 8.41439 0 5.49994ZM11.6313 2.42841C11.2271 3.19456 10.9653 4.27993 10.9653 5.49994C10.9653 6.71993 11.2271 7.8053 11.6313 8.57145C12.0449 9.35548 12.5487 9.71091 13.002 9.71091C13.4553 9.71091 13.9591 9.3556 14.3726 8.57171C14.7768 7.80566 15.0385 6.7203 15.0385 5.49994C15.0385 4.27993 14.7768 3.19456 14.3726 2.4284C13.959 1.64437 13.4552 1.28895 13.002 1.28895C12.5487 1.28895 12.0449 1.64438 11.6313 2.42841ZM16.5341 2.66378C16.3864 3.37693 16.2921 4.37995 16.2921 5.49994C16.2921 6.61993 16.3864 7.62296 16.5341 8.33612C16.6028 8.66783 16.6795 8.91929 16.7548 9.08658C16.83 8.91935 16.9067 8.66797 16.9754 8.33634C17.1231 7.62327 17.2174 6.62025 17.2174 5.49994C17.2174 4.37968 17.1231 3.37665 16.9755 2.66357C16.9068 2.33183 16.8301 2.08039 16.7549 1.91317C16.6796 2.08044 16.6029 2.33196 16.5341 2.66378Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+						<li><a href="https://discord.com/invite/swift-ecosystem" target="_blank"
+								class="social-link_item is-white w-inline-block">
+								<div class="embed_code w-embed"><svg width="18" height="15"
+										class="social-link_icon is-white" viewBox="0 0 18 15" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.61551 0.848972C6.61551 0.848972 4.12403 1.02017 2.49463 2.32858C2.48699 2.33163 2.47782 2.33622 2.47018 2.3408C2.1874 2.60218 1.97494 3.00724 1.71203 3.58807C1.44913 4.16891 1.17094 4.91635 0.917205 5.75245C0.411266 7.42618 9.56309e-05 9.48051 9.56309e-05 11.4141C-0.00143279 11.4829 0.015381 11.5501 0.0490082 11.6097C0.620673 12.614 1.67229 13.2208 2.6536 13.6029C3.63491 13.985 4.54132 14.1379 5.0014 14.1532C5.13133 14.1578 5.25514 14.0982 5.33156 13.9942L6.28536 12.6736C7.0542 12.8555 7.95602 12.9793 9 12.9793C10.044 12.9793 10.9458 12.8555 11.7146 12.6736L12.6684 13.9942C12.7449 14.0982 12.8687 14.1578 12.9986 14.1532C13.4587 14.1379 14.3651 13.985 15.3464 13.6029C16.3277 13.2208 17.3793 12.614 17.951 11.6097C17.9846 11.5501 18.0014 11.4829 17.9999 11.4141C17.9999 9.48051 17.5887 7.42618 17.0828 5.75245C16.8291 4.91635 16.5509 4.16891 16.288 3.58807C16.0251 3.00724 15.8126 2.60218 15.5298 2.3408C15.5222 2.33622 15.513 2.33163 15.5054 2.32858C13.876 1.02017 11.3845 0.848972 11.3845 0.848972C11.3554 0.845915 11.3279 0.845915 11.2989 0.848972C11.1629 0.867315 11.0482 0.955969 10.9932 1.08131C10.9932 1.08131 10.8602 1.37325 10.7731 1.79054C10.0103 1.66826 9.36837 1.63157 9 1.63157C8.63163 1.63157 7.98965 1.66826 7.22692 1.79054C7.1398 1.37325 7.00681 1.08131 7.00681 1.08131C6.93956 0.928455 6.78212 0.835216 6.61551 0.848972ZM6.37095 1.69271C6.39999 1.7722 6.41986 1.84709 6.44432 1.93728C5.56237 2.1421 4.59634 2.47684 3.69299 3.03781C3.55084 3.09742 3.4576 3.23499 3.45301 3.38937C3.44996 3.54222 3.53708 3.68437 3.67465 3.75163C3.81374 3.81735 3.97882 3.79748 4.09652 3.69813C5.90934 2.57467 8.21587 2.41417 9 2.41417C9.78413 2.41417 12.0907 2.57467 13.9035 3.69813C14.0212 3.79748 14.1863 3.81735 14.3254 3.75163C14.4629 3.68437 14.55 3.54222 14.547 3.38937C14.5424 3.23499 14.4492 3.09742 14.307 3.03781C13.4037 2.47684 12.4376 2.1421 11.5557 1.93728C11.5801 1.84709 11.6 1.7722 11.629 1.69271C12.0754 1.74774 13.8102 1.9816 14.9918 2.91553C15.0682 2.98584 15.3342 3.37714 15.5787 3.91823C15.8233 4.45933 16.0801 5.16397 16.3247 5.97256C16.8015 7.54999 17.1867 9.49579 17.2051 11.2796C16.7603 11.9995 15.9257 12.5345 15.0652 12.8692C14.2826 13.1734 13.5519 13.3094 13.1698 13.3461L12.5095 12.4535C12.8457 12.3449 13.1484 12.2272 13.4144 12.1111C14.4018 11.677 14.9306 11.2184 14.9306 11.2184C15.0927 11.0732 15.1064 10.8241 14.9612 10.662C14.816 10.5 14.5669 10.4863 14.4048 10.6315C14.4048 10.6315 13.9952 11.006 13.0964 11.4019C12.7663 11.5471 12.3658 11.6907 11.9103 11.8176C11.8048 11.8054 11.6994 11.8359 11.6168 11.9032C10.8877 12.0805 10.021 12.1967 9 12.1967C7.97131 12.1967 7.10311 12.0698 6.37095 11.891C6.28841 11.8359 6.18753 11.813 6.0897 11.8298C5.63268 11.703 5.23526 11.5471 4.90358 11.4019C4.00481 11.006 3.59517 10.6315 3.59517 10.6315C3.50651 10.5489 3.38423 10.5138 3.26501 10.5337C3.11368 10.5566 2.98835 10.6651 2.94708 10.8134C2.90428 10.9601 2.95319 11.1191 3.06936 11.2184C3.06936 11.2184 3.59822 11.677 4.58564 12.1111C4.85161 12.2272 5.15425 12.3449 5.49053 12.4535L4.83021 13.3461C4.44808 13.3094 3.71745 13.1734 2.93485 12.8692C2.07429 12.5345 1.23972 11.9995 0.794924 11.2796C0.813266 9.49579 1.19845 7.54999 1.67535 5.97256C1.91991 5.16397 2.1767 4.45933 2.42127 3.91823C2.66583 3.37714 2.93179 2.98584 3.00822 2.91553C4.18976 1.9816 5.92462 1.74774 6.37095 1.69271ZM6.45655 6.32718C5.45843 6.32718 4.6957 7.23359 4.6957 8.28368C4.6957 9.33377 5.45843 10.2402 6.45655 10.2402C7.45467 10.2402 8.2174 9.33377 8.2174 8.28368C8.2174 7.23359 7.45467 6.32718 6.45655 6.32718ZM11.5435 6.32718C10.5453 6.32718 9.7826 7.23359 9.7826 8.28368C9.7826 9.33377 10.5453 10.2402 11.5435 10.2402C12.5416 10.2402 13.3043 9.33377 13.3043 8.28368C13.3043 7.23359 12.5416 6.32718 11.5435 6.32718ZM6.45655 7.10978C6.97166 7.10978 7.4348 7.60502 7.4348 8.28368C7.4348 8.96234 6.97166 9.45758 6.45655 9.45758C5.94144 9.45758 5.4783 8.96234 5.4783 8.28368C5.4783 7.60502 5.94144 7.10978 6.45655 7.10978ZM11.5435 7.10978C12.0586 7.10978 12.5217 7.60502 12.5217 8.28368C12.5217 8.96234 12.0586 9.45758 11.5435 9.45758C11.0283 9.45758 10.5652 8.96234 10.5652 8.28368C10.5652 7.60502 11.0283 7.10978 11.5435 7.10978Z"
+											fill="black"></path>
+									</svg></div>
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</main>
+</body>
+
+</html>
